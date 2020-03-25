@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "XBADBaseDemo"
-  spec.version      = "0.0.1.4"
+  spec.version      = "0.0.1.5"
   spec.summary      = "XBADBaseDemo for test"
 
   spec.description  = <<-DESC
