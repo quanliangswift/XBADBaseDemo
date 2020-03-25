@@ -38,8 +38,9 @@ Pod::Spec.new do |spec|
 
   spec.dependency "SwiftyJSON"
 
-# spec.subspec 'XB_FBAD' do |ss|
-# ss.dependency 'XB_FBAD'
-# end
+
+  # spec.subspec 'XB_FBAD' do |ss|
+  # ss.dependency "XBFBAD"
+  # end
 
 end

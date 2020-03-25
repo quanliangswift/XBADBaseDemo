@@ -30,7 +30,7 @@ Pod::Spec.new do |spec|
 
 
   spec.swift_versions = ['5.0', '5.1']
-  spec.source_files = 'XB_FBAD/*.swift'
+  spec.source_files = 'XBFBAD/*.swift'
 
   spec.frameworks = 'UIKit', 'Foundation'
   
