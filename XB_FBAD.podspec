@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint XBADBaseDemo.podspec' to ensure this is a
+#  Be sure to run `pod spec lint XB_FBAD.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
@@ -15,9 +15,9 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "XBADBaseDemo"
-  spec.version      = "0.0.1.2"
-  spec.summary      = "XBADBaseDemo for test"
+  spec.name         = "XB_FBAD"
+  spec.version      = "0.0.1"
+  spec.summary      = "XB_FBAD for FB"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,9 +25,8 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-  私有库测试
-  自己用来测试的
-  没什么用
+  测试私有库
+  主要是FB的AD功能
                    DESC
 
   spec.homepage     = "https://github.com/quanliangswift/XBADBaseDemo"
@@ -96,10 +95,9 @@ Pod::Spec.new do |spec|
   # spec.source_files  = "Classes", "Classes/**/*.{h,m}"
   # spec.exclude_files = "Classes/Exclude"
 
-  spec.swift_versions = ['5.0', '5.1']
-  spec.source_files = 'XBADBase/*.swift'
   # spec.public_header_files = "Classes/**/*.h"
-
+  spec.swift_versions = ['5.0', '5.1']
+  spec.source_files = 'XB_FBAD/*.swift'
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -122,12 +120,12 @@ Pod::Spec.new do |spec|
   #
 
   # spec.framework  = "SomeFramework"
-  spec.frameworks = 'UIKit', 'Foundation'
+  # spec.frameworks = "SomeFramework", "AnotherFramework"
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
 
-
+  spec.frameworks = 'UIKit', 'Foundation'
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  If your library depends on compiler flags you can set them in the xcconfig hash
@@ -137,10 +135,6 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  spec.dependency "SwiftyJSON"
-
-spec.subspec 'XB_FBAD' do |ss|
-  ss.dependency 'XB_FBAD'
-end
+  # spec.dependency "JSONKit", "~> 1.4"
 
 end
