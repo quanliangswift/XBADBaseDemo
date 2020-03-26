@@ -47,16 +47,16 @@ Pod::Spec.new do |spec|
       fbss.source_files = 'XBADBase/Native/FB/*.swift'
     end
     ss.subspec 'Admob' do |admobss|
-      fbss.source_files = 'XBADBase/Native/Admob/*.swift'
+      admobss.source_files = 'XBADBase/Native/Admob/*.swift'
     end
     ss.subspec 'Appnext' do |appnextss|
-      fbss.source_files = 'XBADBase/Native/Appnext/*.swift'
+      appnextss.source_files = 'XBADBase/Native/Appnext/*.swift'
     end
     ss.subspec 'Baidu' do |baiduss|
-      fbss.source_files = 'XBADBase/Native/Baidu/*.swift'
+      baiduss.source_files = 'XBADBase/Native/Baidu/*.swift'
     end
     ss.subspec 'MTG' do |mtgss|
-      fbss.source_files = 'XBADBase/Native/MTG/*.swift'
+      mtgss.source_files = 'XBADBase/Native/MTG/*.swift'
     end
   end
 
@@ -65,16 +65,16 @@ Pod::Spec.new do |spec|
       fbss.source_files = 'XBADBase/RewardVideo/FB/*.swift'
     end
     ss.subspec 'Admob' do |admobss|
-      fbss.source_files = 'XBADBase/RewardVideo/Admob/*.swift'
+      admobss.source_files = 'XBADBase/RewardVideo/Admob/*.swift'
     end
     ss.subspec 'Appnext' do |appnextss|
-      fbss.source_files = 'XBADBase/RewardVideo/Appnext/*.swift'
+      appnextss.source_files = 'XBADBase/RewardVideo/Appnext/*.swift'
     end
     ss.subspec 'Baidu' do |baiduss|
-      fbss.source_files = 'XBADBase/RewardVideo/Baidu/*.swift'
+      baiduss.source_files = 'XBADBase/RewardVideo/Baidu/*.swift'
     end
     ss.subspec 'MTG' do |mtgss|
-      fbss.source_files = 'XBADBase/RewardVideo/MTG/*.swift'
+      mtgss.source_files = 'XBADBase/RewardVideo/MTG/*.swift'
     end
   end
 
@@ -83,16 +83,16 @@ Pod::Spec.new do |spec|
       fbss.source_files = 'XBADBase/InterstitialAd/FB/*.swift'
     end
     ss.subspec 'Admob' do |admobss|
-      fbss.source_files = 'XBADBase/InterstitialAd/Admob/*.swift'
+      admobss.source_files = 'XBADBase/InterstitialAd/Admob/*.swift'
     end
     ss.subspec 'Appnext' do |appnextss|
-      fbss.source_files = 'XBADBase/InterstitialAd/Appnext/*.swift'
+      appnextss.source_files = 'XBADBase/InterstitialAd/Appnext/*.swift'
     end
     ss.subspec 'Baidu' do |baiduss|
-      fbss.source_files = 'XBADBase/InterstitialAd/Baidu/*.swift'
+      baiduss.source_files = 'XBADBase/InterstitialAd/Baidu/*.swift'
     end
     ss.subspec 'MTG' do |mtgss|
-      fbss.source_files = 'XBADBase/InterstitialAd/MTG/*.swift'
+      mtgss.source_files = 'XBADBase/InterstitialAd/MTG/*.swift'
     end
   end
 end
