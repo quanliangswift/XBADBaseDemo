@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class Admob_interstitialAd: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

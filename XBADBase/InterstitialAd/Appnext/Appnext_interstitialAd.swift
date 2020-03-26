@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class Appnext_interstitialAd: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class Baidu_interstitialAd: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

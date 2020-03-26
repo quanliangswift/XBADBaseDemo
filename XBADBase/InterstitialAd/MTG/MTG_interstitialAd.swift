@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MTG_interstitialAd: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FB_rewardvideo: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
