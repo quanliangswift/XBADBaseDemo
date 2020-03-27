@@ -51,7 +51,7 @@ Pod::Spec.new do |spec|
     ss.subspec 'FB' do |fbss|
       fbss.source_files = 'XBADBase/Native/FB/*.swift'
       fbss.dependency 'FBAudienceNetwork'
-      fbss.dependency 'XBADBase/Native/Core'
+      fbss.dependency 'XBADBaseDemo/Native/Core'
     end
     ss.subspec 'Admob' do |admobss|
       admobss.source_files = 'XBADBase/Native/Admob/*.swift'
