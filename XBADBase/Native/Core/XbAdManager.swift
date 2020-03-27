@@ -17,6 +17,9 @@ protocol NativeAdDelegate: class {
     func onCacheAd(xbPlacement: String, item: SDKGroupItem, duplicate: Int?, frequencyControl: FrequencyControl?, complete: ((Bool, String, SDKGroupItem?, [String: Any])->())?)
 }
 
+protocol NativeAdDownloaderDelegate: class {
+    func cacheAd(placementId: String)
+}
 class XbAdManager: NSObject, SSPAdvertLoadLogProtocol, SSPAdvertExpireLogProtocol {
     
     

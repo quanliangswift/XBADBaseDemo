@@ -8,10 +8,7 @@
 
 import UIKit
 import FBAudienceNetwork
-protocol NativeAdDownloaderDelegate: class {
-    
-    func cacheAd(placementId: String)
-}
+
 
 class FBAdDownloader: NSObject, FBNativeAdDelegate, NativeAdDownloaderDelegate {
     deinit {
