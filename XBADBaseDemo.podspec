@@ -36,14 +36,22 @@ Pod::Spec.new do |spec|
   spec.frameworks = 'UIKit', 'Foundation'
 
   spec.dependency "SwiftyJSON"
+  spec.dependency "ObjectMapper"
+  spec.dependency "Alamofire"
 
   spec.subspec 'Core' do |ss|
-  ss.source_files = 'XBADBase/Core/*.swift'
+  ss.source_files = 'XBADBase/Core/**/*.swift'
   end
 
   spec.subspec 'Native' do |ss|
+    ss.subspec 'Core' do |coress|
+      coress.source_files = 'XBADBase/Native/Core/*.swift'
+      coress.dependency 'XBADBaseDemo/Core'
+    end
     ss.subspec 'FB' do |fbss|
       fbss.source_files = 'XBADBase/Native/FB/*.swift'
+      fbss.dependency 'FBAudienceNetwork'
+      fbss.dependency 'XBADBase/Native/Core'
     end
     ss.subspec 'Admob' do |admobss|
       admobss.source_files = 'XBADBase/Native/Admob/*.swift'
