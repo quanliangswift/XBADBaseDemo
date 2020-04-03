@@ -116,7 +116,7 @@ Pod::Spec.new do |spec|
     end
     ss.subspec 'AppLovin' do |alss|
       alss.source_files = 'XBADBase/InterstitialAd/AppLovin/*.swift'
-      alss.dependency 'AppLovinSDK', '6.11.1'
+      alss.dependency 'AppLovinSDK'
       alss.dependency 'XBADBaseDemo/InterstitialAd/Core'
     end
     ss.subspec 'MTG' do |mtgss|
