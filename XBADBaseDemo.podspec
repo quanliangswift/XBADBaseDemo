@@ -45,6 +45,7 @@ Pod::Spec.new do |spec|
   end
 
   spec.subspec 'Native' do |ss|
+    ss.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
     ss.subspec 'Core' do |coress|
       coress.source_files = 'XBADBase/Native/Core/*.swift'
       coress.dependency 'XBADBaseDemo/Core'
