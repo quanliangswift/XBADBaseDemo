@@ -449,7 +449,6 @@
 		B2AF6727242C623B00454795 /* XBADBase */ = {
 			isa = PBXGroup;
 			children = (
-				B26415172431A0C1000A65F0 /* XBADBaseDemo-Bridging-Header.h */,
 				B2AF6728242C623B00454795 /* Core */,
 				B2AF672A242C623B00454795 /* Native */,
 				B2AF6735242C623B00454795 /* RewardVideo */,
@@ -462,6 +461,7 @@
 		B2AF6728242C623B00454795 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				B26415172431A0C1000A65F0 /* XBADBaseDemo-Bridging-Header.h */,
 				B2AF677D242D957100454795 /* Extension */,
 				B2AF6763242C8B4900454795 /* Model */,
 				B2AF6764242C8B8100454795 /* AdvertConfig.swift */,
