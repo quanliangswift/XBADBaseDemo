@@ -436,6 +436,7 @@
 			children = (
 				B2AF6727242C623B00454795 /* XBADBase */,
 				B2AF669D242B377000454795 /* AppDelegate.swift */,
+				B26415172431A0C1000A65F0 /* XBADBaseDemo-Bridging-Header.h */,
 				B2AF66A1242B377000454795 /* ViewController.swift */,
 				B2AF66A3242B377000454795 /* Main.storyboard */,
 				B2AF66A6242B377100454795 /* Assets.xcassets */,
@@ -453,7 +454,6 @@
 				B2AF672A242C623B00454795 /* Native */,
 				B2AF6735242C623B00454795 /* RewardVideo */,
 				B2AF6740242C623B00454795 /* InterstitialAd */,
-				B26415172431A0C1000A65F0 /* XBADBaseDemo-Bridging-Header.h */,
 			);
 			name = XBADBase;
 			path = ../../XBADBase;
