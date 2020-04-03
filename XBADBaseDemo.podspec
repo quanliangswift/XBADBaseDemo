@@ -72,7 +72,7 @@ Pod::Spec.new do |spec|
     end
     ss.subspec 'MTG' do |mtgss|
       mtgss.source_files = 'XBADBase/Native/MTG/*.swift'
-      mtgss.dependency 'MintegralAdSDK/NativeAd', '5.8.8.0'
+      mtgss.dependency 'MintegralAdSDK', :path => '../NativeAd', '5.8.8.0'
       mtgss.dependency 'XBADBaseDemo/Native/Core'
     end
   end
@@ -94,7 +94,7 @@ Pod::Spec.new do |spec|
     end
     ss.subspec 'MTG' do |mtgss|
       mtgss.source_files = 'XBADBase/RewardVideo/MTG/*.swift'
-      mtgss.dependency 'MintegralAdSDK/RewardVideoAd', '5.8.8.0'
+      mtgss.dependency 'MintegralAdSDK', :path => '../RewardVideoAd', '5.8.8.0'
       mtgss.dependency 'XBADBaseDemo/RewardVideo/Core'
     end
   end
@@ -121,7 +121,7 @@ Pod::Spec.new do |spec|
     end
     ss.subspec 'MTG' do |mtgss|
       mtgss.source_files = 'XBADBase/InterstitialAd/MTG/*.swift'
-      mtgss.dependency 'MintegralAdSDK/InterstitialVideoAd', '5.8.8.0'
+      mtgss.dependency 'MintegralAdSDK', :path => '../InterstitialVideoAd', '5.8.8.0'
       mtgss.dependency 'XBADBaseDemo/InterstitialAd/Core'
     end
   end
