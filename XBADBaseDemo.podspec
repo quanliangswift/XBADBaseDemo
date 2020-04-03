@@ -72,7 +72,7 @@ Pod::Spec.new do |spec|
     end
     ss.subspec 'MTG' do |mtgss|
       mtgss.source_files = 'XBADBase/Native/MTG/*.swift'
-      mtgss.dependency 'MintegralAdSDK/NativeAd', '5.8.8.0', :git => 'https://github.com/Mintegral-official/MintegralAdSDK-iOS.git'
+      mtgss.dependency 'MintegralAdSDK/NativeAd', '5.8.8.0', :path => '/NativeAd'
       mtgss.dependency 'XBADBaseDemo/Native/Core'
     end
   end
