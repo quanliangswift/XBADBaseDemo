@@ -35,10 +35,10 @@ class XbSDKIntegrationManager: NSObject {
 //    }
     
     func registerConfig(xbAdIntegration: XbAdIntegration) {
-        dPrint(xbAdIntegration)
-        dPrint(xbAdIntegration.nativeAdsJson)
-        dPrint(xbAdIntegration.interstitialAdsJson)
-        dPrint(xbAdIntegration.rewardedVideoAdsJson)
+        print(xbAdIntegration)
+        print(xbAdIntegration.nativeAdsJson)
+        print(xbAdIntegration.interstitialAdsJson)
+        print(xbAdIntegration.rewardedVideoAdsJson)
         var isNativeChange: Bool = false
         var isInterstitialChange: Bool = false
         var isRewardedVideoChange: Bool = false

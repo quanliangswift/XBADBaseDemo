@@ -13,7 +13,7 @@ import FBAudienceNetwork
 class FBAdDownloader: NSObject, FBNativeAdDelegate, NativeAdDownloaderDelegate {
     deinit {
         let className = NSStringFromClass(self.classForCoder)
-        dPrint("\n\n---------deinit:\(className)---------\n\n")
+        print("\n\n---------deinit:\(className)---------\n\n")
     }
     var cacheCallBack: ((_ id: Int64, _ isTooFrequently:  Bool, _ lastFrequentlyTime:  Double, _ errorCode: Int, _ msg:  String, _ placementID:  String, _ nativeAd:  FBNativeAd?)->())?
     var id = Int64(arc4random())
@@ -28,14 +28,14 @@ class FBAdDownloader: NSObject, FBNativeAdDelegate, NativeAdDownloaderDelegate {
         cacheCallBack?(id, false, 0, 0, "", nativeAd.placementID, nativeAd)
     }
     func nativeAd(_ nativeAd: FBNativeAd, didFailWithError error: Error) {
-        dPrint("Native ad failed to load with error: \(error)")
+        print("Native ad failed to load with error: \(error)")
         var isTooFrequently = false
         var lastFrequentlyTime = 0.0
         if error.localizedDescription.contains("too frequently") {
             isTooFrequently = true
             lastFrequentlyTime = Date().timeIntervalSince1970
         }
-        dPrint((error as NSError).code)
+        print((error as NSError).code)
         cacheCallBack?(id, isTooFrequently, lastFrequentlyTime, (error as NSError).code,error.localizedDescription, nativeAd.placementID, nil)
     }
     

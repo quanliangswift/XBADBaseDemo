@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "XBADBaseDemo"
-  spec.version      = "0.0.1.9"
+  spec.version      = "0.0.1.10"
   spec.summary      = "XBADBaseDemo for test"
 
   spec.description  = <<-DESC
@@ -41,6 +41,7 @@ Pod::Spec.new do |spec|
 
   spec.subspec 'Core' do |ss|
   ss.source_files = 'XBADBase/Core/**/*.swift'
+  ss.dependency 'SDWebImage'
   end
 
   spec.subspec 'Native' do |ss|
@@ -55,52 +56,73 @@ Pod::Spec.new do |spec|
     end
     ss.subspec 'Admob' do |admobss|
       admobss.source_files = 'XBADBase/Native/Admob/*.swift'
+      admobss.dependency  'Google-Mobile-Ads-SDK', '7.48.0'
+      admobss.dependency 'XBADBaseDemo/Native/Core'
     end
     ss.subspec 'Appnext' do |appnextss|
       appnextss.source_files = 'XBADBase/Native/Appnext/*.swift'
+      appnextss.dependency 'XBADBaseDemo/Native/Core'
+      # appnext 不支持pod，需要自己导入.a文件，并且在build setting -> header search path中加相关配置，例如 $(PROJECT_DIR)/XBADBaseDemo/Appnext/include
     end
     ss.subspec 'Baidu' do |baiduss|
       baiduss.source_files = 'XBADBase/Native/Baidu/*.swift'
+      baiduss.dependency 'XBADBaseDemo/Native/Core'
+      baiduss.dependency 'SnapKit'
+      # baidu 不支持pod，需要自己导入.framework文件，
     end
     ss.subspec 'MTG' do |mtgss|
       mtgss.source_files = 'XBADBase/Native/MTG/*.swift'
+      mtgss.dependency 'MintegralAdSDK/NativeAd', '5.8.8.0'
+      mtgss.dependency 'XBADBaseDemo/Native/Core'
     end
   end
 
   spec.subspec 'RewardVideo' do |ss|
+    ss.subspec 'Core' do |coress|
+      coress.source_files = 'XBADBase/RewardVideo/Core/*.swift'
+      coress.dependency 'XBADBaseDemo/Core'
+    end
     ss.subspec 'FB' do |fbss|
       fbss.source_files = 'XBADBase/RewardVideo/FB/*.swift'
       fbss.dependency 'FBAudienceNetwork'
+      fbss.dependency 'XBADBaseDemo/RewardVideo/Core'
     end
     ss.subspec 'Admob' do |admobss|
       admobss.source_files = 'XBADBase/RewardVideo/Admob/*.swift'
-    end
-    ss.subspec 'Appnext' do |appnextss|
-      appnextss.source_files = 'XBADBase/RewardVideo/Appnext/*.swift'
-    end
-    ss.subspec 'Baidu' do |baiduss|
-      baiduss.source_files = 'XBADBase/RewardVideo/Baidu/*.swift'
+      admobss.dependency  'Google-Mobile-Ads-SDK', '7.48.0'
+      admobss.dependency 'XBADBaseDemo/RewardVideo/Core'
     end
     ss.subspec 'MTG' do |mtgss|
       mtgss.source_files = 'XBADBase/RewardVideo/MTG/*.swift'
+      mtgss.dependency 'MintegralAdSDK/RewardVideoAd', '5.8.8.0'
+      mtgss.dependency 'XBADBaseDemo/RewardVideo/Core'
     end
   end
 
   spec.subspec 'InterstitialAd' do |ss|
+    ss.subspec 'Core' do |coress|
+      coress.source_files = 'XBADBase/InterstitialAd/Core/*.swift'
+      coress.dependency 'XBADBaseDemo/Core'
+    end
     ss.subspec 'FB' do |fbss|
       fbss.source_files = 'XBADBase/InterstitialAd/FB/*.swift'
+      fbss.dependency 'FBAudienceNetwork'
+      fbss.dependency 'XBADBaseDemo/InterstitialAd/Core'
     end
     ss.subspec 'Admob' do |admobss|
       admobss.source_files = 'XBADBase/InterstitialAd/Admob/*.swift'
+      admobss.dependency  'Google-Mobile-Ads-SDK', '7.48.0'
+      admobss.dependency 'XBADBaseDemo/InterstitialAd/Core'
     end
-    ss.subspec 'Appnext' do |appnextss|
-      appnextss.source_files = 'XBADBase/InterstitialAd/Appnext/*.swift'
-    end
-    ss.subspec 'Baidu' do |baiduss|
-      baiduss.source_files = 'XBADBase/InterstitialAd/Baidu/*.swift'
+    ss.subspec 'AppLovin' do |alss|
+      alss.source_files = 'XBADBase/InterstitialAd/AppLovin/*.swift'
+      alss.dependency 'AppLovinSDK', '6.11.1'
+      alss.dependency 'XBADBaseDemo/InterstitialAd/Core'
     end
     ss.subspec 'MTG' do |mtgss|
       mtgss.source_files = 'XBADBase/InterstitialAd/MTG/*.swift'
+      mtgss.dependency 'MintegralAdSDK/InterstitialVideoAd', '5.8.8.0'
+      mtgss.dependency 'XBADBaseDemo/InterstitialAd/Core'
     end
   end
 end

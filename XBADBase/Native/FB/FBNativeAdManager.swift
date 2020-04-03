@@ -33,7 +33,7 @@ extension checkErrorProtocol {
     }
 }
 
-class FBNativeAdManager: NSObject, SSPAdvertLoadLogProtocol, checkErrorProtocol {
+class FBNativeAdManager: NSObject, checkErrorProtocol {
     static let shared = FBNativeAdManager()
     
     var isFirstPreloadingFBAdes : Bool = true
@@ -96,7 +96,7 @@ extension FBNativeAdManager {
                                           "placement_id": placementId,
                                           "msg": XbAdError.NATIVE_AD_MSG_NO_MORE_TRY,
                                           "trigger_code": result.1]
-                self.logSSPAdvertLoad(source: "facebook", placementId: placementId, success: false, error: XbAdError.NATIVE_AD_NO_MORE_TRY_ERROR_CODE , msg: XbAdError.NATIVE_AD_MSG_NO_MORE_TRY, duration: Date().timeIntervalSince1970 - startTime, groupLoadInfo: [loadInfoItem])
+                AdvertConfig.shared.sspLoadCallback?((source: "facebook", placementId: placementId, success: false, error: XbAdError.NATIVE_AD_NO_MORE_TRY_ERROR_CODE , msg: XbAdError.NATIVE_AD_MSG_NO_MORE_TRY, duration: Date().timeIntervalSince1970 - startTime, groupLoadInfo: [loadInfoItem]))
                 return
             }
         }
@@ -108,10 +108,10 @@ extension FBNativeAdManager {
                 
                 self.preloadingFBAdes[placementID]!.append((nativeAd!, Date().timeIntervalSince1970))
                 
-                self.logSSPAdvertLoad(source: "facebook", placementId: placementID, success: true, error: nil, msg: nil, duration: Date().timeIntervalSince1970 - startTime, groupLoadInfo: [])
+                AdvertConfig.shared.sspLoadCallback?((source: "facebook", placementId: placementID, success: true, error: nil, msg: nil, duration: Date().timeIntervalSince1970 - startTime, groupLoadInfo: []))
                 self.facebookError[placementID] = nil
             } else {
-                self.logSSPAdvertLoad(source: "facebook", placementId: placementID, success: false, error: errorCode , msg: msg, duration: Date().timeIntervalSince1970 - startTime, groupLoadInfo: [])
+                AdvertConfig.shared.sspLoadCallback?((source: "facebook", placementId: placementID, success: false, error: errorCode , msg: msg, duration: Date().timeIntervalSince1970 - startTime, groupLoadInfo: []))
                 //                    广告请求的报错记录
                 if let errorItems = self.facebookError[placementID] {
                     if let error = errorItems[errorCode] {

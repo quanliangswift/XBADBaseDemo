@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="SAc-2i-8rG" userLabel="FacebookNativeAdSView" customClass="FacebookNativeAdSView" customModule="XBADBaseDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ti-P3-9TG" customClass="UIImageView">
+                    <rect key="frame" x="274" y="15" width="108" height="70"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="3aF-yY-yAn"/>
+                        <constraint firstAttribute="width" constant="108" id="H5W-ks-Nvq"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xc7-vK-xdP" userLabel="adCoverMediaView" customClass="FBMediaView">
+                    <rect key="frame" x="274" y="15" width="108" height="70"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SuW-qK-gVh">
+                    <rect key="frame" x="0.0" y="85" width="395" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMJ-Z5-7Um" customClass="FixedFontLabel" customModule="XBADBaseDemo" customModuleProvider="target">
+                            <rect key="frame" x="13" y="9" width="14.5" height="12"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="insetLeft">
+                                    <real key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="insetRight">
+                                    <real key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="insetTop">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="insetBottom">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="socialContext" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qpM-sT-Tko" userLabel="adSocialContextLabel">
+                            <rect key="frame" x="37.5" y="9" width="66" height="12"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZh-FX-Xz5" userLabel="adCallToActionButton">
+                            <rect key="frame" x="272" y="3" width="110" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="110" id="2xP-Ts-6uK"/>
+                                <constraint firstAttribute="height" constant="24" id="Exy-js-pc5"/>
+                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="Mzh-Rj-oW9"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                            <state key="normal" title="Call To Action">
+                                <color key="titleColor" red="0.14901960780000001" green="0.56862745100000001" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="cMJ-Z5-7Um" firstAttribute="centerY" secondItem="SuW-qK-gVh" secondAttribute="centerY" constant="-5" id="1Uy-oJ-4wc"/>
+                        <constraint firstAttribute="height" constant="40" id="39E-Fe-OVa"/>
+                        <constraint firstItem="rZh-FX-Xz5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="qpM-sT-Tko" secondAttribute="trailing" constant="5" id="E1x-XX-hvj"/>
+                        <constraint firstItem="qpM-sT-Tko" firstAttribute="leading" secondItem="cMJ-Z5-7Um" secondAttribute="trailing" constant="10" id="HQB-Lr-hcR"/>
+                        <constraint firstItem="cMJ-Z5-7Um" firstAttribute="leading" secondItem="SuW-qK-gVh" secondAttribute="leading" constant="13" id="VF0-hi-srv">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="marginConstant" value="viewToEdge"/>
+                            </userDefinedRuntimeAttributes>
+                        </constraint>
+                        <constraint firstAttribute="trailing" secondItem="rZh-FX-Xz5" secondAttribute="trailing" constant="13" id="VPk-ag-R3z">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="marginConstant" value="viewToEdge"/>
+                            </userDefinedRuntimeAttributes>
+                        </constraint>
+                        <constraint firstItem="rZh-FX-Xz5" firstAttribute="centerY" secondItem="SuW-qK-gVh" secondAttribute="centerY" constant="-5" id="eR6-Wj-Qt5"/>
+                        <constraint firstItem="qpM-sT-Tko" firstAttribute="centerY" secondItem="cMJ-Z5-7Um" secondAttribute="centerY" id="uf5-4R-Zj1"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="adBodyLabel" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70Y-dF-NuC" userLabel="adBodyLabel" customClass="FontLabel" customModule="XBADBaseDemo" customModuleProvider="target">
+                    <rect key="frame" x="13" y="15" width="256" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16.5"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tMi-H7-VeU">
+                    <rect key="frame" x="13" y="124.5" width="369" height="0.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="yvj-Or-gaB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="xc7-vK-xdP" firstAttribute="leading" secondItem="3ti-P3-9TG" secondAttribute="leading" id="3xC-RM-KHf"/>
+                <constraint firstItem="3ti-P3-9TG" firstAttribute="leading" secondItem="70Y-dF-NuC" secondAttribute="trailing" constant="5" id="66R-yO-q3C"/>
+                <constraint firstItem="SuW-qK-gVh" firstAttribute="leading" secondItem="SAc-2i-8rG" secondAttribute="leading" id="CGn-xV-Mys"/>
+                <constraint firstItem="3ti-P3-9TG" firstAttribute="top" secondItem="SAc-2i-8rG" secondAttribute="top" constant="15" id="GmP-01-T7U"/>
+                <constraint firstItem="SuW-qK-gVh" firstAttribute="top" secondItem="3ti-P3-9TG" secondAttribute="bottom" id="Hcn-Vn-MyJ"/>
+                <constraint firstItem="SuW-qK-gVh" firstAttribute="top" relation="greaterThanOrEqual" secondItem="70Y-dF-NuC" secondAttribute="bottom" constant="5" id="IIU-Dc-fEE"/>
+                <constraint firstAttribute="trailing" secondItem="tMi-H7-VeU" secondAttribute="trailing" constant="13" id="IeF-o6-LBE"/>
+                <constraint firstAttribute="trailing" secondItem="3ti-P3-9TG" secondAttribute="trailing" constant="13" id="NGV-qe-Flv">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="marginConstant" value="viewToEdge"/>
+                    </userDefinedRuntimeAttributes>
+                </constraint>
+                <constraint firstAttribute="bottom" secondItem="tMi-H7-VeU" secondAttribute="bottom" id="OEr-Me-lCG"/>
+                <constraint firstItem="70Y-dF-NuC" firstAttribute="leading" secondItem="SAc-2i-8rG" secondAttribute="leading" constant="13" id="Oz0-my-PCs">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="marginConstant" value="viewToEdge"/>
+                    </userDefinedRuntimeAttributes>
+                </constraint>
+                <constraint firstAttribute="bottom" secondItem="SuW-qK-gVh" secondAttribute="bottom" id="b5f-3W-CSB"/>
+                <constraint firstItem="xc7-vK-xdP" firstAttribute="top" secondItem="3ti-P3-9TG" secondAttribute="top" id="bgE-0Y-pAP"/>
+                <constraint firstItem="tMi-H7-VeU" firstAttribute="leading" secondItem="SAc-2i-8rG" secondAttribute="leading" constant="13" id="fyT-F9-Lbx"/>
+                <constraint firstItem="70Y-dF-NuC" firstAttribute="top" secondItem="3ti-P3-9TG" secondAttribute="top" id="gPh-Lc-Bxc"/>
+                <constraint firstAttribute="trailing" secondItem="SuW-qK-gVh" secondAttribute="trailing" id="ibB-Db-Geh"/>
+                <constraint firstItem="xc7-vK-xdP" firstAttribute="bottom" secondItem="3ti-P3-9TG" secondAttribute="bottom" id="qDj-4h-Rx9"/>
+                <constraint firstItem="xc7-vK-xdP" firstAttribute="trailing" secondItem="3ti-P3-9TG" secondAttribute="trailing" id="zIe-ur-65m"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="adBodyLabel" destination="70Y-dF-NuC" id="aZh-Va-hCo"/>
+                <outlet property="adCallToActionButton" destination="rZh-FX-Xz5" id="Yvf-2O-1m6"/>
+                <outlet property="adCoverBgView" destination="3ti-P3-9TG" id="E66-cT-Z5i"/>
+                <outlet property="adCoverMediaView" destination="xc7-vK-xdP" id="vJP-W8-6W0"/>
+                <outlet property="adSocialContextLabel" destination="qpM-sT-Tko" id="ctA-0L-pby"/>
+                <outlet property="picHeightConstraint" destination="3aF-yY-yAn" id="Ver-ke-2tD"/>
+                <outlet property="picWidthConstraint" destination="H5W-ks-Nvq" id="9RQ-4m-oph"/>
+                <outlet property="separationView" destination="tMi-H7-VeU" id="ai3-ai-0de"/>
+                <outlet property="tagsLabel" destination="cMJ-Z5-7Um" id="dC4-fR-Jsg"/>
+            </connections>
+            <point key="canvasLocation" x="152.80000000000001" y="320.68965517241384"/>
+        </view>
+    </objects>
+</document>

@@ -22,6 +22,7 @@ enum ADType: String {
     case baidu = "baidu"
     case appnext = "appnext"
     case mintegral = "mintegral"
+    case appLovin = "appLovin"
 }
 // 现在配置有ssp的XB广告位
 enum XBPlacementType: String {
@@ -31,4 +32,37 @@ enum XBPlacementType: String {
     case reward_popup = "reward_popup"
     case public_item = "public"
     case none = ""
+}
+
+struct SSPAdvertStyle {
+//    信息流 详情页 1张小图
+    static let STYLEID_FEED_DETAIL_1 = "1"
+//    信息流 详情页 3张小图
+    static let STYLEID_FEED_DETAIL_2 = "2"
+//    信息流 详情页 1张大图
+    static let STYLEID_FEED_DETAIL_3 = "3"
+//    信息流 详情页 mp4 gif
+    static let STYLEID_FEED_DETAIL_4 = "4"
+//    信息流 详情页 大图视频
+    static let STYLEID_FEED_DETAIL_5 = "5"
+
+//    开屏 图片
+    static let STYLEID_SPLASH_1 = "19"
+//    开屏 gif
+    static let STYLEID_SPLASH_2 = "20"
+//    开屏 视频
+    static let STYLEID_SPLASH_3 = "21"
+//    相关推荐 1张小图
+    static let STYLEID_CONTENT_1 = "23"
+//    搜索顶部banner 1张小图
+    static let STYLEID_SEARCH_BANNER_1 = "27"
+//    详情页中部banner 1张大图
+    static let STYLEID_ARTICLE_BANNER = "28"
+    
+    static let STYLEID_VAST = "29"
+    // 激励视频
+    static let STYLEID_REWARDED_VIDEO = "8"
+    // 插屏广告
+    static let STYLEID_INTERSTITAL_AD = "7"
+    static let STYLEID_VAST_INSTREAM = "30"
 }

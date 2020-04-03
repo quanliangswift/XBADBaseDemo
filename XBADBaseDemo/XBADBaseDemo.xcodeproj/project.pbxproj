@@ -7,32 +7,80 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B264150A24319924000A65F0 /* MTGAdDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264150924319924000A65F0 /* MTGAdDownloader.swift */; };
+		B264150C2431993C000A65F0 /* MTG_NativeAdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264150B2431993C000A65F0 /* MTG_NativeAdManager.swift */; };
+		B264150E24319947000A65F0 /* XbMTGAdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264150D24319947000A65F0 /* XbMTGAdManager.swift */; };
+		B264151224319974000A65F0 /* XbAdManager_MTG.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264150F24319974000A65F0 /* XbAdManager_MTG.swift */; };
+		B264151324319974000A65F0 /* XbAdAdapter_MTG.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264151024319974000A65F0 /* XbAdAdapter_MTG.swift */; };
+		B264151424319974000A65F0 /* XbSDKIntegrationManager_MTG.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264151124319974000A65F0 /* XbSDKIntegrationManager_MTG.swift */; };
+		B264151624319B63000A65F0 /* MTGAdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264151524319B63000A65F0 /* MTGAdModel.swift */; };
+		B264155A2431A16B000A65F0 /* libAppnextSDKCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B26415582431A16B000A65F0 /* libAppnextSDKCore.a */; };
+		B264155B2431A16B000A65F0 /* libAppnextNativeAdsSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B26415592431A16B000A65F0 /* libAppnextNativeAdsSDK.a */; };
+		B264155D2431A18C000A65F0 /* AppnextNativeAdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264155C2431A18C000A65F0 /* AppnextNativeAdManager.swift */; };
+		B264155F2431A198000A65F0 /* XbAppnextAdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264155E2431A198000A65F0 /* XbAppnextAdManager.swift */; };
+		B26415612431A1A6000A65F0 /* AppnextAdDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415602431A1A6000A65F0 /* AppnextAdDownloader.swift */; };
+		B26415652431A1DF000A65F0 /* XbAdManager_appnext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415622431A1DF000A65F0 /* XbAdManager_appnext.swift */; };
+		B26415662431A1DF000A65F0 /* XbSDKIntegrationManager_appnext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415632431A1DF000A65F0 /* XbSDKIntegrationManager_appnext.swift */; };
+		B26415672431A1DF000A65F0 /* XbAdAdapter_appnext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415642431A1DF000A65F0 /* XbAdAdapter_appnext.swift */; };
+		B26415692431A264000A65F0 /* AppnextAdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415682431A264000A65F0 /* AppnextAdModel.swift */; };
+		B264156B2431A3EF000A65F0 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264156A2431A3EF000A65F0 /* Utils.swift */; };
+		B264156D2431A67A000A65F0 /* DUModuleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B264156C2431A67A000A65F0 /* DUModuleSDK.framework */; };
+		B264156F2431A69E000A65F0 /* DUAdDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264156E2431A69E000A65F0 /* DUAdDownloader.swift */; };
+		B26415712431A6AF000A65F0 /* DUNativeAdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415702431A6AF000A65F0 /* DUNativeAdManager.swift */; };
+		B26415732431A6B7000A65F0 /* XbDUAdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415722431A6B7000A65F0 /* XbDUAdManager.swift */; };
+		B26415772431A6EB000A65F0 /* XbAdManager_baidu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415742431A6EA000A65F0 /* XbAdManager_baidu.swift */; };
+		B26415782431A6EB000A65F0 /* XbSDKIntegrationManager_baidu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415752431A6EA000A65F0 /* XbSDKIntegrationManager_baidu.swift */; };
+		B26415792431A6EB000A65F0 /* XbAdAdapter_baidu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415762431A6EA000A65F0 /* XbAdAdapter_baidu.swift */; };
+		B264157B2431C5A9000A65F0 /* GoogleRewardVideoDownLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264157A2431C5A9000A65F0 /* GoogleRewardVideoDownLoader.swift */; };
+		B264157D2431C5B4000A65F0 /* FBRewardVideoDownLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264157C2431C5B4000A65F0 /* FBRewardVideoDownLoader.swift */; };
+		B264157F2431C5C0000A65F0 /* MTGRewardVideoDownLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264157E2431C5C0000A65F0 /* MTGRewardVideoDownLoader.swift */; };
+		B26415822431C627000A65F0 /* XBRewardVideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415812431C627000A65F0 /* XBRewardVideoManager.swift */; };
+		B26415842431C9AA000A65F0 /* XBRewardVideoContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415832431C9AA000A65F0 /* XBRewardVideoContainerController.swift */; };
+		B26415882431CB72000A65F0 /* XbMTGRVManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415872431CB72000A65F0 /* XbMTGRVManager.swift */; };
+		B264158A2431CB82000A65F0 /* XbGoogleRVManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415892431CB82000A65F0 /* XbGoogleRVManager.swift */; };
+		B264158C2431CC5E000A65F0 /* XBWeakMTGDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264158B2431CC5E000A65F0 /* XBWeakMTGDelegate.swift */; };
+		B264158E2431E408000A65F0 /* XbFbRVManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264158D2431E408000A65F0 /* XbFbRVManager.swift */; };
+		B264159F24349D1B000A65F0 /* FBInterstitialAdDownLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264159E24349D1B000A65F0 /* FBInterstitialAdDownLoader.swift */; };
+		B26415A224349D3A000A65F0 /* XbInterstitialAdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415A124349D3A000A65F0 /* XbInterstitialAdManager.swift */; };
+		B26415A424349D4F000A65F0 /* MTGInterstitialAdDownLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415A324349D4F000A65F0 /* MTGInterstitialAdDownLoader.swift */; };
+		B26415A624349D63000A65F0 /* GoogleInterstitialAdDownLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415A524349D63000A65F0 /* GoogleInterstitialAdDownLoader.swift */; };
+		B26415A924349DB1000A65F0 /* ALInterstitialAdDownLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415A824349DB1000A65F0 /* ALInterstitialAdDownLoader.swift */; };
+		B26415AB2434A381000A65F0 /* XbFbInterstitialManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415AA2434A381000A65F0 /* XbFbInterstitialManager.swift */; };
+		B26415AD2434A3A6000A65F0 /* XbMTGInterstitialManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415AC2434A3A6000A65F0 /* XbMTGInterstitialManager.swift */; };
+		B26415AF2434A3B3000A65F0 /* XbGoogleInterstitialManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415AE2434A3B3000A65F0 /* XbGoogleInterstitialManager.swift */; };
+		B26415B12434A3BE000A65F0 /* XbALInterstitialManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415B02434A3BE000A65F0 /* XbALInterstitialManager.swift */; };
+		B26415B32435D210000A65F0 /* XBRewardVideoManager_FB.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415B22435D210000A65F0 /* XBRewardVideoManager_FB.swift */; };
+		B26415B52435D277000A65F0 /* XBRewardVideoManager_MTG.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415B42435D277000A65F0 /* XBRewardVideoManager_MTG.swift */; };
+		B26415B72435D29D000A65F0 /* XBRewardVideoManager_admob.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415B62435D29D000A65F0 /* XBRewardVideoManager_admob.swift */; };
+		B26415B92435D34F000A65F0 /* XbInterstitialAdManager_FB.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415B82435D34F000A65F0 /* XbInterstitialAdManager_FB.swift */; };
+		B26415BB2435D357000A65F0 /* XbInterstitialAdManager_MTG.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415BA2435D357000A65F0 /* XbInterstitialAdManager_MTG.swift */; };
+		B26415BD2435D361000A65F0 /* XbInterstitialAdManager_admob.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415BC2435D361000A65F0 /* XbInterstitialAdManager_admob.swift */; };
+		B26415BF2435D371000A65F0 /* XbInterstitialAdManager_AL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415BE2435D371000A65F0 /* XbInterstitialAdManager_AL.swift */; };
+		B26415C42435F001000A65F0 /* DUNativeAdSView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26415C22435F001000A65F0 /* DUNativeAdSView.xib */; };
+		B26415C72435F56A000A65F0 /* DUNativeAdSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415C62435F56A000A65F0 /* DUNativeAdSView.swift */; };
+		B26415C92435F60C000A65F0 /* FontLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415C82435F60C000A65F0 /* FontLabel.swift */; };
+		B26415CB2435F8F7000A65F0 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415CA2435F8F7000A65F0 /* UIImageViewExtension.swift */; };
+		B26415CE2435FAD2000A65F0 /* FacebookNativeAdSView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26415CC2435FAD1000A65F0 /* FacebookNativeAdSView.xib */; };
+		B26415D12435FAE3000A65F0 /* FacebookNativeAdSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415D02435FAE3000A65F0 /* FacebookNativeAdSView.swift */; };
+		B26415D42435FCDA000A65F0 /* MTGNativeAdSView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26415D22435FCDA000A65F0 /* MTGNativeAdSView.xib */; };
+		B26415D72435FCE7000A65F0 /* MTGNativeAdSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415D62435FCE7000A65F0 /* MTGNativeAdSView.swift */; };
+		B26415DA2435FE94000A65F0 /* MTGNativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26415D82435FE94000A65F0 /* MTGNativeAdView.xib */; };
+		B26415DD2435FEA4000A65F0 /* MTGNativeAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415DC2435FEA4000A65F0 /* MTGNativeAdView.swift */; };
+		B26415E1243601AF000A65F0 /* FacebookNativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26415DF243601AF000A65F0 /* FacebookNativeAdView.xib */; };
+		B26415E3243601BC000A65F0 /* FacebookNativeAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415E2243601BC000A65F0 /* FacebookNativeAdView.swift */; };
+		B26415E52436D064000A65F0 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26415E42436D064000A65F0 /* UIColorExtension.swift */; };
 		B2AF669E242B377000454795 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF669D242B377000454795 /* AppDelegate.swift */; };
 		B2AF66A2242B377000454795 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF66A1242B377000454795 /* ViewController.swift */; };
 		B2AF66A5242B377000454795 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2AF66A3242B377000454795 /* Main.storyboard */; };
 		B2AF66A7242B377100454795 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2AF66A6242B377100454795 /* Assets.xcassets */; };
 		B2AF66AA242B377100454795 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2AF66A8242B377100454795 /* LaunchScreen.storyboard */; };
-		B2AF674C242C623B00454795 /* Baidu_naitve.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF672C242C623B00454795 /* Baidu_naitve.swift */; };
-		B2AF674E242C623B00454795 /* MTG_naitve.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF6730242C623B00454795 /* MTG_naitve.swift */; };
-		B2AF674F242C623B00454795 /* Appnext_naitve.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF6732242C623B00454795 /* Appnext_naitve.swift */; };
-		B2AF6750242C623B00454795 /* Admob_naitve.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF6734242C623B00454795 /* Admob_naitve.swift */; };
-		B2AF6751242C623B00454795 /* Baidu_rewardvideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF6737242C623B00454795 /* Baidu_rewardvideo.swift */; };
-		B2AF6752242C623B00454795 /* FB_rewardvideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF6739242C623B00454795 /* FB_rewardvideo.swift */; };
-		B2AF6753242C623B00454795 /* MTG_rewardvideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF673B242C623B00454795 /* MTG_rewardvideo.swift */; };
-		B2AF6754242C623B00454795 /* Appnext_rewardvideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF673D242C623B00454795 /* Appnext_rewardvideo.swift */; };
-		B2AF6755242C623B00454795 /* Admob_rewardvideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF673F242C623B00454795 /* Admob_rewardvideo.swift */; };
-		B2AF6756242C623B00454795 /* Baidu_interstitialAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF6742242C623B00454795 /* Baidu_interstitialAd.swift */; };
-		B2AF6757242C623B00454795 /* FB_interstitialAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF6744242C623B00454795 /* FB_interstitialAd.swift */; };
-		B2AF6758242C623B00454795 /* MTG_interstitialAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF6746242C623B00454795 /* MTG_interstitialAd.swift */; };
-		B2AF6759242C623B00454795 /* Appnext_interstitialAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF6748242C623B00454795 /* Appnext_interstitialAd.swift */; };
-		B2AF675A242C623B00454795 /* Admob_interstitialAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF674A242C623B00454795 /* Admob_interstitialAd.swift */; };
 		B2AF675C242C677000454795 /* FBAdDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF675B242C677000454795 /* FBAdDownloader.swift */; };
 		B2AF675E242C85FA00454795 /* XbSDKIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF675D242C85FA00454795 /* XbSDKIntegration.swift */; };
 		B2AF6760242C89F800454795 /* FBNativeAdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF675F242C89F800454795 /* FBNativeAdManager.swift */; };
 		B2AF6762242C8A8800454795 /* SSPAdvertConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF6761242C8A8800454795 /* SSPAdvertConfig.swift */; };
 		B2AF6765242C8B8100454795 /* AdvertConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF6764242C8B8100454795 /* AdvertConfig.swift */; };
 		B2AF6767242C903600454795 /* SSPLogProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF6766242C903600454795 /* SSPLogProtocol.swift */; };
-		B2AF6769242C95BC00454795 /* XbFbAdProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF6768242C95BC00454795 /* XbFbAdProtocol.swift */; };
+		B2AF6769242C95BC00454795 /* XbFbAdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF6768242C95BC00454795 /* XbFbAdManager.swift */; };
 		B2AF676B242C99EA00454795 /* XbSDKIntegrationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF676A242C99EA00454795 /* XbSDKIntegrationManager.swift */; };
 		B2AF676D242C9A1F00454795 /* XbSDKIntegrationManager_FB.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF676C242C9A1F00454795 /* XbSDKIntegrationManager_FB.swift */; };
 		B2AF676F242C9B9A00454795 /* XbAdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF676E242C9B9A00454795 /* XbAdManager.swift */; };
@@ -41,8 +89,14 @@
 		B2AF6776242C9F7200454795 /* AdEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF6775242C9F7200454795 /* AdEnum.swift */; };
 		B2AF6778242CC31200454795 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF6777242CC31200454795 /* Constants.swift */; };
 		B2AF677A242CC3A800454795 /* XbAdManager_FB.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF6779242CC3A800454795 /* XbAdManager_FB.swift */; };
-		B2AF677C242CC5B000454795 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF677B242CC5B000454795 /* Timer.swift */; };
+		B2AF677C242CC5B000454795 /* DelayTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF677B242CC5B000454795 /* DelayTimer.swift */; };
 		B2AF677F242D958600454795 /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF677E242D958600454795 /* DictionaryExtension.swift */; };
+		B2AF6781242DF96800454795 /* GoogleAdDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF6780242DF96800454795 /* GoogleAdDownloader.swift */; };
+		B2AF6783242DF97B00454795 /* GoogleNativeAdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF6782242DF97B00454795 /* GoogleNativeAdManager.swift */; };
+		B2AF6785242DF98700454795 /* XbGoogleAdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF6784242DF98700454795 /* XbGoogleAdManager.swift */; };
+		B2AF678F242DFA3700454795 /* XbAdManager_admob.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF678C242DFA3600454795 /* XbAdManager_admob.swift */; };
+		B2AF6790242DFA3700454795 /* XbAdAdapter_admob.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF678D242DFA3700454795 /* XbAdAdapter_admob.swift */; };
+		B2AF6791242DFA3700454795 /* XbSDKIntegrationManager_admob.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF678E242DFA3700454795 /* XbSDKIntegrationManager_admob.swift */; };
 		F66260DB401F5D7305A87632 /* Pods_XBADBaseDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF0D17716B42445C9621331F /* Pods_XBADBaseDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +104,126 @@
 		37525BB60AC453FABA6F5D4A /* Pods-XBADBaseDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XBADBaseDemo.release.xcconfig"; path = "Target Support Files/Pods-XBADBaseDemo/Pods-XBADBaseDemo.release.xcconfig"; sourceTree = "<group>"; };
 		691ECDEB49F818073501F86B /* Pods-XBADBaseDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XBADBaseDemo.debug.xcconfig"; path = "Target Support Files/Pods-XBADBaseDemo/Pods-XBADBaseDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		AF0D17716B42445C9621331F /* Pods_XBADBaseDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XBADBaseDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B264150924319924000A65F0 /* MTGAdDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTGAdDownloader.swift; sourceTree = "<group>"; };
+		B264150B2431993C000A65F0 /* MTG_NativeAdManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTG_NativeAdManager.swift; sourceTree = "<group>"; };
+		B264150D24319947000A65F0 /* XbMTGAdManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XbMTGAdManager.swift; sourceTree = "<group>"; };
+		B264150F24319974000A65F0 /* XbAdManager_MTG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XbAdManager_MTG.swift; sourceTree = "<group>"; };
+		B264151024319974000A65F0 /* XbAdAdapter_MTG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XbAdAdapter_MTG.swift; sourceTree = "<group>"; };
+		B264151124319974000A65F0 /* XbSDKIntegrationManager_MTG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XbSDKIntegrationManager_MTG.swift; sourceTree = "<group>"; };
+		B264151524319B63000A65F0 /* MTGAdModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGAdModel.swift; sourceTree = "<group>"; };
+		B26415172431A0C1000A65F0 /* XBADBaseDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XBADBaseDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		B264151E2431A16B000A65F0 /* AppnextAFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextAFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		B264151F2431A16B000A65F0 /* AppnextAdsContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextAdsContainer.h; sourceTree = "<group>"; };
+		B26415202431A16B000A65F0 /* NSData+AppnextBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AppnextBase64.h"; sourceTree = "<group>"; };
+		B26415212431A16B000A65F0 /* AppnextErrorCodesConvector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextErrorCodesConvector.h; sourceTree = "<group>"; };
+		B26415222431A16B000A65F0 /* AppnextAFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextAFHTTPSessionManager.h; sourceTree = "<group>"; };
+		B26415232431A16B000A65F0 /* AppnextError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextError.h; sourceTree = "<group>"; };
+		B26415242431A16B000A65F0 /* AppnextAdConfiguration+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppnextAdConfiguration+Extras.h"; sourceTree = "<group>"; };
+		B26415252431A16B000A65F0 /* AppnextAFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextAFURLSessionManager.h; sourceTree = "<group>"; };
+		B26415262431A16B000A65F0 /* AppnextNetworkRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextNetworkRequestManager.h; sourceTree = "<group>"; };
+		B26415272431A16B000A65F0 /* AppnextUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextUtils.h; sourceTree = "<group>"; };
+		B26415282431A16B000A65F0 /* AppnextAFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextAFURLResponseSerialization.h; sourceTree = "<group>"; };
+		B26415292431A16B000A65F0 /* UIDevice+AppnextSystemVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+AppnextSystemVersion.h"; sourceTree = "<group>"; };
+		B264152A2431A16B000A65F0 /* AppnextAdData+InternalExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppnextAdData+InternalExtras.h"; sourceTree = "<group>"; };
+		B264152B2431A16B000A65F0 /* AppnextUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextUIViewController.h; sourceTree = "<group>"; };
+		B264152C2431A16B000A65F0 /* AppnextWeakReferenceWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextWeakReferenceWrapper.h; sourceTree = "<group>"; };
+		B264152D2431A16B000A65F0 /* AppnextEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextEvent.h; sourceTree = "<group>"; };
+		B264152E2431A16B000A65F0 /* AppnextRedirectResolveManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextRedirectResolveManagerDelegate.h; sourceTree = "<group>"; };
+		B264152F2431A16B000A65F0 /* AppnextUIWebViewHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextUIWebViewHandler.h; sourceTree = "<group>"; };
+		B26415302431A16B000A65F0 /* AppnextRedirectResolveResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextRedirectResolveResponse.h; sourceTree = "<group>"; };
+		B26415312431A16B000A65F0 /* AppnextAFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextAFURLRequestSerialization.h; sourceTree = "<group>"; };
+		B26415322431A16B000A65F0 /* NSString+AppnextHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AppnextHelpers.h"; sourceTree = "<group>"; };
+		B26415332431A16B000A65F0 /* AppnextRedirectResolveRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextRedirectResolveRequest.h; sourceTree = "<group>"; };
+		B26415342431A16B000A65F0 /* AppnextAFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextAFSecurityPolicy.h; sourceTree = "<group>"; };
+		B26415352431A16B000A65F0 /* AppnextAdConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextAdConfiguration.h; sourceTree = "<group>"; };
+		B26415362431A16B000A65F0 /* AppnextSettingsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextSettingsManager.h; sourceTree = "<group>"; };
+		B26415372431A16B000A65F0 /* NSString+AppnextConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AppnextConvert.h"; sourceTree = "<group>"; };
+		B26415382431A16B000A65F0 /* UIApplication+AppnextDimenssions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+AppnextDimenssions.h"; sourceTree = "<group>"; };
+		B26415392431A16B000A65F0 /* UIView+AppnextOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AppnextOrientation.h"; sourceTree = "<group>"; };
+		B264153A2431A16B000A65F0 /* AppnextSDKCorePublicDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextSDKCorePublicDefs.h; sourceTree = "<group>"; };
+		B264153B2431A16B000A65F0 /* AppnextScriptLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextScriptLoader.h; sourceTree = "<group>"; };
+		B264153C2431A16B000A65F0 /* AppnextSDKCoreDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextSDKCoreDefs.h; sourceTree = "<group>"; };
+		B264153D2431A16B000A65F0 /* AppnextAd+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppnextAd+Helpers.h"; sourceTree = "<group>"; };
+		B264153E2431A16B000A65F0 /* AppnextAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextAFNetworking.h; sourceTree = "<group>"; };
+		B264153F2431A16B000A65F0 /* AppnextParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextParser.h; sourceTree = "<group>"; };
+		B26415402431A16B000A65F0 /* AppnextSDKCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextSDKCore.h; sourceTree = "<group>"; };
+		B26415412431A16B000A65F0 /* AppnextAdData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextAdData.h; sourceTree = "<group>"; };
+		B26415422431A16B000A65F0 /* OpenLinkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenLinkHelper.h; sourceTree = "<group>"; };
+		B26415432431A16B000A65F0 /* AppnextRedirectResolveManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextRedirectResolveManager.h; sourceTree = "<group>"; };
+		B26415442431A16B000A65F0 /* AppnextBannerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextBannerData.h; sourceTree = "<group>"; };
+		B26415452431A16B000A65F0 /* AppnextAdsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextAdsManager.h; sourceTree = "<group>"; };
+		B26415462431A16B000A65F0 /* AppnextAd+DelegateCallbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppnextAd+DelegateCallbacks.h"; sourceTree = "<group>"; };
+		B26415472431A16B000A65F0 /* AppnextNetworkDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextNetworkDefs.h; sourceTree = "<group>"; };
+		B26415482431A16B000A65F0 /* AppnextEventsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextEventsManager.h; sourceTree = "<group>"; };
+		B26415492431A16B000A65F0 /* AppnextAFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextAFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		B264154A2431A16B000A65F0 /* AppnextNetworkUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextNetworkUtils.h; sourceTree = "<group>"; };
+		B264154B2431A16B000A65F0 /* AppnextConfigurationForRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextConfigurationForRequest.h; sourceTree = "<group>"; };
+		B264154C2431A16B000A65F0 /* AppnextAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextAd.h; sourceTree = "<group>"; };
+		B264154D2431A16B000A65F0 /* AppnextAFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextAFURLConnectionOperation.h; sourceTree = "<group>"; };
+		B264154E2431A16B000A65F0 /* AppnextAdsContainerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextAdsContainerDelegate.h; sourceTree = "<group>"; };
+		B264154F2431A16B000A65F0 /* AppnextResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextResourceLoader.h; sourceTree = "<group>"; };
+		B26415502431A16B000A65F0 /* AppnextSDKCoreApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextSDKCoreApi.h; sourceTree = "<group>"; };
+		B26415512431A16B000A65F0 /* AppnextAFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextAFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		B26415532431A16B000A65F0 /* AppnextNativeAdsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextNativeAdsRequest.h; sourceTree = "<group>"; };
+		B26415542431A16B000A65F0 /* AppnextNativeAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextNativeAd.h; sourceTree = "<group>"; };
+		B26415552431A16B000A65F0 /* AppnextNativeAdsSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextNativeAdsSDK.h; sourceTree = "<group>"; };
+		B26415562431A16B000A65F0 /* AppnextNativeAdsRequest+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppnextNativeAdsRequest+Extras.h"; sourceTree = "<group>"; };
+		B26415572431A16B000A65F0 /* AppnextNativeAdsSDKApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextNativeAdsSDKApi.h; sourceTree = "<group>"; };
+		B26415582431A16B000A65F0 /* libAppnextSDKCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppnextSDKCore.a; sourceTree = "<group>"; };
+		B26415592431A16B000A65F0 /* libAppnextNativeAdsSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppnextNativeAdsSDK.a; sourceTree = "<group>"; };
+		B264155C2431A18C000A65F0 /* AppnextNativeAdManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppnextNativeAdManager.swift; sourceTree = "<group>"; };
+		B264155E2431A198000A65F0 /* XbAppnextAdManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XbAppnextAdManager.swift; sourceTree = "<group>"; };
+		B26415602431A1A6000A65F0 /* AppnextAdDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppnextAdDownloader.swift; sourceTree = "<group>"; };
+		B26415622431A1DF000A65F0 /* XbAdManager_appnext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XbAdManager_appnext.swift; sourceTree = "<group>"; };
+		B26415632431A1DF000A65F0 /* XbSDKIntegrationManager_appnext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XbSDKIntegrationManager_appnext.swift; sourceTree = "<group>"; };
+		B26415642431A1DF000A65F0 /* XbAdAdapter_appnext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XbAdAdapter_appnext.swift; sourceTree = "<group>"; };
+		B26415682431A264000A65F0 /* AppnextAdModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppnextAdModel.swift; sourceTree = "<group>"; };
+		B264156A2431A3EF000A65F0 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		B264156C2431A67A000A65F0 /* DUModuleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DUModuleSDK.framework; sourceTree = "<group>"; };
+		B264156E2431A69E000A65F0 /* DUAdDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DUAdDownloader.swift; sourceTree = "<group>"; };
+		B26415702431A6AF000A65F0 /* DUNativeAdManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DUNativeAdManager.swift; sourceTree = "<group>"; };
+		B26415722431A6B7000A65F0 /* XbDUAdManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XbDUAdManager.swift; sourceTree = "<group>"; };
+		B26415742431A6EA000A65F0 /* XbAdManager_baidu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XbAdManager_baidu.swift; sourceTree = "<group>"; };
+		B26415752431A6EA000A65F0 /* XbSDKIntegrationManager_baidu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XbSDKIntegrationManager_baidu.swift; sourceTree = "<group>"; };
+		B26415762431A6EA000A65F0 /* XbAdAdapter_baidu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XbAdAdapter_baidu.swift; sourceTree = "<group>"; };
+		B264157A2431C5A9000A65F0 /* GoogleRewardVideoDownLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleRewardVideoDownLoader.swift; sourceTree = "<group>"; };
+		B264157C2431C5B4000A65F0 /* FBRewardVideoDownLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBRewardVideoDownLoader.swift; sourceTree = "<group>"; };
+		B264157E2431C5C0000A65F0 /* MTGRewardVideoDownLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTGRewardVideoDownLoader.swift; sourceTree = "<group>"; };
+		B26415812431C627000A65F0 /* XBRewardVideoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XBRewardVideoManager.swift; sourceTree = "<group>"; };
+		B26415832431C9AA000A65F0 /* XBRewardVideoContainerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XBRewardVideoContainerController.swift; sourceTree = "<group>"; };
+		B26415872431CB72000A65F0 /* XbMTGRVManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XbMTGRVManager.swift; sourceTree = "<group>"; };
+		B26415892431CB82000A65F0 /* XbGoogleRVManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XbGoogleRVManager.swift; sourceTree = "<group>"; };
+		B264158B2431CC5E000A65F0 /* XBWeakMTGDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XBWeakMTGDelegate.swift; sourceTree = "<group>"; };
+		B264158D2431E408000A65F0 /* XbFbRVManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XbFbRVManager.swift; sourceTree = "<group>"; };
+		B264159E24349D1B000A65F0 /* FBInterstitialAdDownLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBInterstitialAdDownLoader.swift; sourceTree = "<group>"; };
+		B26415A124349D3A000A65F0 /* XbInterstitialAdManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XbInterstitialAdManager.swift; sourceTree = "<group>"; };
+		B26415A324349D4F000A65F0 /* MTGInterstitialAdDownLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTGInterstitialAdDownLoader.swift; sourceTree = "<group>"; };
+		B26415A524349D63000A65F0 /* GoogleInterstitialAdDownLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleInterstitialAdDownLoader.swift; sourceTree = "<group>"; };
+		B26415A824349DB1000A65F0 /* ALInterstitialAdDownLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALInterstitialAdDownLoader.swift; sourceTree = "<group>"; };
+		B26415AA2434A381000A65F0 /* XbFbInterstitialManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XbFbInterstitialManager.swift; sourceTree = "<group>"; };
+		B26415AC2434A3A6000A65F0 /* XbMTGInterstitialManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XbMTGInterstitialManager.swift; sourceTree = "<group>"; };
+		B26415AE2434A3B3000A65F0 /* XbGoogleInterstitialManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XbGoogleInterstitialManager.swift; sourceTree = "<group>"; };
+		B26415B02434A3BE000A65F0 /* XbALInterstitialManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XbALInterstitialManager.swift; sourceTree = "<group>"; };
+		B26415B22435D210000A65F0 /* XBRewardVideoManager_FB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XBRewardVideoManager_FB.swift; sourceTree = "<group>"; };
+		B26415B42435D277000A65F0 /* XBRewardVideoManager_MTG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XBRewardVideoManager_MTG.swift; sourceTree = "<group>"; };
+		B26415B62435D29D000A65F0 /* XBRewardVideoManager_admob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XBRewardVideoManager_admob.swift; sourceTree = "<group>"; };
+		B26415B82435D34F000A65F0 /* XbInterstitialAdManager_FB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XbInterstitialAdManager_FB.swift; sourceTree = "<group>"; };
+		B26415BA2435D357000A65F0 /* XbInterstitialAdManager_MTG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XbInterstitialAdManager_MTG.swift; sourceTree = "<group>"; };
+		B26415BC2435D361000A65F0 /* XbInterstitialAdManager_admob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XbInterstitialAdManager_admob.swift; sourceTree = "<group>"; };
+		B26415BE2435D371000A65F0 /* XbInterstitialAdManager_AL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XbInterstitialAdManager_AL.swift; sourceTree = "<group>"; };
+		B26415C22435F001000A65F0 /* DUNativeAdSView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DUNativeAdSView.xib; sourceTree = "<group>"; };
+		B26415C62435F56A000A65F0 /* DUNativeAdSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUNativeAdSView.swift; sourceTree = "<group>"; };
+		B26415C82435F60C000A65F0 /* FontLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontLabel.swift; sourceTree = "<group>"; };
+		B26415CA2435F8F7000A65F0 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		B26415CC2435FAD1000A65F0 /* FacebookNativeAdSView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FacebookNativeAdSView.xib; sourceTree = "<group>"; };
+		B26415D02435FAE3000A65F0 /* FacebookNativeAdSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookNativeAdSView.swift; sourceTree = "<group>"; };
+		B26415D22435FCDA000A65F0 /* MTGNativeAdSView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTGNativeAdSView.xib; sourceTree = "<group>"; };
+		B26415D62435FCE7000A65F0 /* MTGNativeAdSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGNativeAdSView.swift; sourceTree = "<group>"; };
+		B26415D82435FE94000A65F0 /* MTGNativeAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTGNativeAdView.xib; sourceTree = "<group>"; };
+		B26415DC2435FEA4000A65F0 /* MTGNativeAdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGNativeAdView.swift; sourceTree = "<group>"; };
+		B26415DF243601AF000A65F0 /* FacebookNativeAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FacebookNativeAdView.xib; sourceTree = "<group>"; };
+		B26415E2243601BC000A65F0 /* FacebookNativeAdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookNativeAdView.swift; sourceTree = "<group>"; };
+		B26415E42436D064000A65F0 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		B2AF669A242B377000454795 /* XBADBaseDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XBADBaseDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2AF669D242B377000454795 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2AF66A1242B377000454795 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,27 +231,13 @@
 		B2AF66A6242B377100454795 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2AF66A9242B377100454795 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2AF66AB242B377100454795 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B2AF672C242C623B00454795 /* Baidu_naitve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Baidu_naitve.swift; sourceTree = "<group>"; };
-		B2AF6730242C623B00454795 /* MTG_naitve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTG_naitve.swift; sourceTree = "<group>"; };
-		B2AF6732242C623B00454795 /* Appnext_naitve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appnext_naitve.swift; sourceTree = "<group>"; };
-		B2AF6734242C623B00454795 /* Admob_naitve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Admob_naitve.swift; sourceTree = "<group>"; };
-		B2AF6737242C623B00454795 /* Baidu_rewardvideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Baidu_rewardvideo.swift; sourceTree = "<group>"; };
-		B2AF6739242C623B00454795 /* FB_rewardvideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FB_rewardvideo.swift; sourceTree = "<group>"; };
-		B2AF673B242C623B00454795 /* MTG_rewardvideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTG_rewardvideo.swift; sourceTree = "<group>"; };
-		B2AF673D242C623B00454795 /* Appnext_rewardvideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appnext_rewardvideo.swift; sourceTree = "<group>"; };
-		B2AF673F242C623B00454795 /* Admob_rewardvideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Admob_rewardvideo.swift; sourceTree = "<group>"; };
-		B2AF6742242C623B00454795 /* Baidu_interstitialAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Baidu_interstitialAd.swift; sourceTree = "<group>"; };
-		B2AF6744242C623B00454795 /* FB_interstitialAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FB_interstitialAd.swift; sourceTree = "<group>"; };
-		B2AF6746242C623B00454795 /* MTG_interstitialAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTG_interstitialAd.swift; sourceTree = "<group>"; };
-		B2AF6748242C623B00454795 /* Appnext_interstitialAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appnext_interstitialAd.swift; sourceTree = "<group>"; };
-		B2AF674A242C623B00454795 /* Admob_interstitialAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Admob_interstitialAd.swift; sourceTree = "<group>"; };
 		B2AF675B242C677000454795 /* FBAdDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBAdDownloader.swift; sourceTree = "<group>"; };
 		B2AF675D242C85FA00454795 /* XbSDKIntegration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XbSDKIntegration.swift; sourceTree = "<group>"; };
 		B2AF675F242C89F800454795 /* FBNativeAdManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBNativeAdManager.swift; sourceTree = "<group>"; };
 		B2AF6761242C8A8800454795 /* SSPAdvertConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSPAdvertConfig.swift; sourceTree = "<group>"; };
 		B2AF6764242C8B8100454795 /* AdvertConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertConfig.swift; sourceTree = "<group>"; };
 		B2AF6766242C903600454795 /* SSPLogProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSPLogProtocol.swift; sourceTree = "<group>"; };
-		B2AF6768242C95BC00454795 /* XbFbAdProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XbFbAdProtocol.swift; sourceTree = "<group>"; };
+		B2AF6768242C95BC00454795 /* XbFbAdManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XbFbAdManager.swift; sourceTree = "<group>"; };
 		B2AF676A242C99EA00454795 /* XbSDKIntegrationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XbSDKIntegrationManager.swift; sourceTree = "<group>"; };
 		B2AF676C242C9A1F00454795 /* XbSDKIntegrationManager_FB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XbSDKIntegrationManager_FB.swift; sourceTree = "<group>"; };
 		B2AF676E242C9B9A00454795 /* XbAdManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XbAdManager.swift; sourceTree = "<group>"; };
@@ -86,8 +246,14 @@
 		B2AF6775242C9F7200454795 /* AdEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdEnum.swift; sourceTree = "<group>"; };
 		B2AF6777242CC31200454795 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B2AF6779242CC3A800454795 /* XbAdManager_FB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XbAdManager_FB.swift; sourceTree = "<group>"; };
-		B2AF677B242CC5B000454795 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		B2AF677B242CC5B000454795 /* DelayTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelayTimer.swift; sourceTree = "<group>"; };
 		B2AF677E242D958600454795 /* DictionaryExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
+		B2AF6780242DF96800454795 /* GoogleAdDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleAdDownloader.swift; sourceTree = "<group>"; };
+		B2AF6782242DF97B00454795 /* GoogleNativeAdManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleNativeAdManager.swift; sourceTree = "<group>"; };
+		B2AF6784242DF98700454795 /* XbGoogleAdManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XbGoogleAdManager.swift; sourceTree = "<group>"; };
+		B2AF678C242DFA3600454795 /* XbAdManager_admob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XbAdManager_admob.swift; sourceTree = "<group>"; };
+		B2AF678D242DFA3700454795 /* XbAdAdapter_admob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XbAdAdapter_admob.swift; sourceTree = "<group>"; };
+		B2AF678E242DFA3700454795 /* XbSDKIntegrationManager_admob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XbSDKIntegrationManager_admob.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +261,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B264155A2431A16B000A65F0 /* libAppnextSDKCore.a in Frameworks */,
+				B264155B2431A16B000A65F0 /* libAppnextNativeAdsSDK.a in Frameworks */,
+				B264156D2431A67A000A65F0 /* DUModuleSDK.framework in Frameworks */,
 				F66260DB401F5D7305A87632 /* Pods_XBADBaseDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,9 +288,134 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B264151B2431A16B000A65F0 /* Appnext */ = {
+			isa = PBXGroup;
+			children = (
+				B264151C2431A16B000A65F0 /* include */,
+				B26415582431A16B000A65F0 /* libAppnextSDKCore.a */,
+				B26415592431A16B000A65F0 /* libAppnextNativeAdsSDK.a */,
+			);
+			path = Appnext;
+			sourceTree = "<group>";
+		};
+		B264151C2431A16B000A65F0 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				B264151D2431A16B000A65F0 /* AppnextSDKCore */,
+				B26415522431A16B000A65F0 /* AppnextNativeAdsSDK */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		B264151D2431A16B000A65F0 /* AppnextSDKCore */ = {
+			isa = PBXGroup;
+			children = (
+				B264151E2431A16B000A65F0 /* AppnextAFHTTPRequestOperation.h */,
+				B264151F2431A16B000A65F0 /* AppnextAdsContainer.h */,
+				B26415202431A16B000A65F0 /* NSData+AppnextBase64.h */,
+				B26415212431A16B000A65F0 /* AppnextErrorCodesConvector.h */,
+				B26415222431A16B000A65F0 /* AppnextAFHTTPSessionManager.h */,
+				B26415232431A16B000A65F0 /* AppnextError.h */,
+				B26415242431A16B000A65F0 /* AppnextAdConfiguration+Extras.h */,
+				B26415252431A16B000A65F0 /* AppnextAFURLSessionManager.h */,
+				B26415262431A16B000A65F0 /* AppnextNetworkRequestManager.h */,
+				B26415272431A16B000A65F0 /* AppnextUtils.h */,
+				B26415282431A16B000A65F0 /* AppnextAFURLResponseSerialization.h */,
+				B26415292431A16B000A65F0 /* UIDevice+AppnextSystemVersion.h */,
+				B264152A2431A16B000A65F0 /* AppnextAdData+InternalExtras.h */,
+				B264152B2431A16B000A65F0 /* AppnextUIViewController.h */,
+				B264152C2431A16B000A65F0 /* AppnextWeakReferenceWrapper.h */,
+				B264152D2431A16B000A65F0 /* AppnextEvent.h */,
+				B264152E2431A16B000A65F0 /* AppnextRedirectResolveManagerDelegate.h */,
+				B264152F2431A16B000A65F0 /* AppnextUIWebViewHandler.h */,
+				B26415302431A16B000A65F0 /* AppnextRedirectResolveResponse.h */,
+				B26415312431A16B000A65F0 /* AppnextAFURLRequestSerialization.h */,
+				B26415322431A16B000A65F0 /* NSString+AppnextHelpers.h */,
+				B26415332431A16B000A65F0 /* AppnextRedirectResolveRequest.h */,
+				B26415342431A16B000A65F0 /* AppnextAFSecurityPolicy.h */,
+				B26415352431A16B000A65F0 /* AppnextAdConfiguration.h */,
+				B26415362431A16B000A65F0 /* AppnextSettingsManager.h */,
+				B26415372431A16B000A65F0 /* NSString+AppnextConvert.h */,
+				B26415382431A16B000A65F0 /* UIApplication+AppnextDimenssions.h */,
+				B26415392431A16B000A65F0 /* UIView+AppnextOrientation.h */,
+				B264153A2431A16B000A65F0 /* AppnextSDKCorePublicDefs.h */,
+				B264153B2431A16B000A65F0 /* AppnextScriptLoader.h */,
+				B264153C2431A16B000A65F0 /* AppnextSDKCoreDefs.h */,
+				B264153D2431A16B000A65F0 /* AppnextAd+Helpers.h */,
+				B264153E2431A16B000A65F0 /* AppnextAFNetworking.h */,
+				B264153F2431A16B000A65F0 /* AppnextParser.h */,
+				B26415402431A16B000A65F0 /* AppnextSDKCore.h */,
+				B26415412431A16B000A65F0 /* AppnextAdData.h */,
+				B26415422431A16B000A65F0 /* OpenLinkHelper.h */,
+				B26415432431A16B000A65F0 /* AppnextRedirectResolveManager.h */,
+				B26415442431A16B000A65F0 /* AppnextBannerData.h */,
+				B26415452431A16B000A65F0 /* AppnextAdsManager.h */,
+				B26415462431A16B000A65F0 /* AppnextAd+DelegateCallbacks.h */,
+				B26415472431A16B000A65F0 /* AppnextNetworkDefs.h */,
+				B26415482431A16B000A65F0 /* AppnextEventsManager.h */,
+				B26415492431A16B000A65F0 /* AppnextAFNetworkReachabilityManager.h */,
+				B264154A2431A16B000A65F0 /* AppnextNetworkUtils.h */,
+				B264154B2431A16B000A65F0 /* AppnextConfigurationForRequest.h */,
+				B264154C2431A16B000A65F0 /* AppnextAd.h */,
+				B264154D2431A16B000A65F0 /* AppnextAFURLConnectionOperation.h */,
+				B264154E2431A16B000A65F0 /* AppnextAdsContainerDelegate.h */,
+				B264154F2431A16B000A65F0 /* AppnextResourceLoader.h */,
+				B26415502431A16B000A65F0 /* AppnextSDKCoreApi.h */,
+				B26415512431A16B000A65F0 /* AppnextAFHTTPRequestOperationManager.h */,
+			);
+			path = AppnextSDKCore;
+			sourceTree = "<group>";
+		};
+		B26415522431A16B000A65F0 /* AppnextNativeAdsSDK */ = {
+			isa = PBXGroup;
+			children = (
+				B26415532431A16B000A65F0 /* AppnextNativeAdsRequest.h */,
+				B26415542431A16B000A65F0 /* AppnextNativeAd.h */,
+				B26415552431A16B000A65F0 /* AppnextNativeAdsSDK.h */,
+				B26415562431A16B000A65F0 /* AppnextNativeAdsRequest+Extras.h */,
+				B26415572431A16B000A65F0 /* AppnextNativeAdsSDKApi.h */,
+			);
+			path = AppnextNativeAdsSDK;
+			sourceTree = "<group>";
+		};
+		B26415802431C61E000A65F0 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B26415832431C9AA000A65F0 /* XBRewardVideoContainerController.swift */,
+				B26415812431C627000A65F0 /* XBRewardVideoManager.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B26415952432F92A000A65F0 /* XB */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = XB;
+			sourceTree = "<group>";
+		};
+		B26415A024349D2E000A65F0 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B26415A124349D3A000A65F0 /* XbInterstitialAdManager.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B26415A724349D75000A65F0 /* AppLovin */ = {
+			isa = PBXGroup;
+			children = (
+				B26415A824349DB1000A65F0 /* ALInterstitialAdDownLoader.swift */,
+				B26415B02434A3BE000A65F0 /* XbALInterstitialManager.swift */,
+				B26415BE2435D371000A65F0 /* XbInterstitialAdManager_AL.swift */,
+			);
+			path = AppLovin;
+			sourceTree = "<group>";
+		};
 		B2AF6691242B377000454795 = {
 			isa = PBXGroup;
 			children = (
+				B264156C2431A67A000A65F0 /* DUModuleSDK.framework */,
 				B2AF669C242B377000454795 /* XBADBaseDemo */,
 				B2AF669B242B377000454795 /* Products */,
 				9FE9F635995A99D08031F6C1 /* Pods */,
@@ -147,6 +441,7 @@
 				B2AF66A6242B377100454795 /* Assets.xcassets */,
 				B2AF66A8242B377100454795 /* LaunchScreen.storyboard */,
 				B2AF66AB242B377100454795 /* Info.plist */,
+				B264151B2431A16B000A65F0 /* Appnext */,
 			);
 			path = XBADBaseDemo;
 			sourceTree = "<group>";
@@ -158,6 +453,7 @@
 				B2AF672A242C623B00454795 /* Native */,
 				B2AF6735242C623B00454795 /* RewardVideo */,
 				B2AF6740242C623B00454795 /* InterstitialAd */,
+				B26415172431A0C1000A65F0 /* XBADBaseDemo-Bridging-Header.h */,
 			);
 			name = XBADBase;
 			path = ../../XBADBase;
@@ -169,10 +465,12 @@
 				B2AF677D242D957100454795 /* Extension */,
 				B2AF6763242C8B4900454795 /* Model */,
 				B2AF6764242C8B8100454795 /* AdvertConfig.swift */,
+				B26415C82435F60C000A65F0 /* FontLabel.swift */,
 				B2AF6766242C903600454795 /* SSPLogProtocol.swift */,
 				B2AF6775242C9F7200454795 /* AdEnum.swift */,
 				B2AF6777242CC31200454795 /* Constants.swift */,
-				B2AF677B242CC5B000454795 /* Timer.swift */,
+				B2AF677B242CC5B000454795 /* DelayTimer.swift */,
+				B264156A2431A3EF000A65F0 /* Utils.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -193,7 +491,14 @@
 		B2AF672B242C623B00454795 /* Baidu */ = {
 			isa = PBXGroup;
 			children = (
-				B2AF672C242C623B00454795 /* Baidu_naitve.swift */,
+				B264156E2431A69E000A65F0 /* DUAdDownloader.swift */,
+				B26415702431A6AF000A65F0 /* DUNativeAdManager.swift */,
+				B26415722431A6B7000A65F0 /* XbDUAdManager.swift */,
+				B26415762431A6EA000A65F0 /* XbAdAdapter_baidu.swift */,
+				B26415742431A6EA000A65F0 /* XbAdManager_baidu.swift */,
+				B26415752431A6EA000A65F0 /* XbSDKIntegrationManager_baidu.swift */,
+				B26415C22435F001000A65F0 /* DUNativeAdSView.xib */,
+				B26415C62435F56A000A65F0 /* DUNativeAdSView.swift */,
 			);
 			path = Baidu;
 			sourceTree = "<group>";
@@ -203,10 +508,14 @@
 			children = (
 				B2AF675F242C89F800454795 /* FBNativeAdManager.swift */,
 				B2AF675B242C677000454795 /* FBAdDownloader.swift */,
-				B2AF6768242C95BC00454795 /* XbFbAdProtocol.swift */,
-				B2AF676C242C9A1F00454795 /* XbSDKIntegrationManager_FB.swift */,
+				B2AF6768242C95BC00454795 /* XbFbAdManager.swift */,
 				B2AF6773242C9F2200454795 /* XbAdAdapter_FB.swift */,
 				B2AF6779242CC3A800454795 /* XbAdManager_FB.swift */,
+				B2AF676C242C9A1F00454795 /* XbSDKIntegrationManager_FB.swift */,
+				B26415CC2435FAD1000A65F0 /* FacebookNativeAdSView.xib */,
+				B26415D02435FAE3000A65F0 /* FacebookNativeAdSView.swift */,
+				B26415DF243601AF000A65F0 /* FacebookNativeAdView.xib */,
+				B26415E2243601BC000A65F0 /* FacebookNativeAdView.swift */,
 			);
 			path = FB;
 			sourceTree = "<group>";
@@ -214,7 +523,17 @@
 		B2AF672F242C623B00454795 /* MTG */ = {
 			isa = PBXGroup;
 			children = (
-				B2AF6730242C623B00454795 /* MTG_naitve.swift */,
+				B264150D24319947000A65F0 /* XbMTGAdManager.swift */,
+				B264150B2431993C000A65F0 /* MTG_NativeAdManager.swift */,
+				B264150924319924000A65F0 /* MTGAdDownloader.swift */,
+				B264151524319B63000A65F0 /* MTGAdModel.swift */,
+				B264151024319974000A65F0 /* XbAdAdapter_MTG.swift */,
+				B264150F24319974000A65F0 /* XbAdManager_MTG.swift */,
+				B264151124319974000A65F0 /* XbSDKIntegrationManager_MTG.swift */,
+				B26415D22435FCDA000A65F0 /* MTGNativeAdSView.xib */,
+				B26415D62435FCE7000A65F0 /* MTGNativeAdSView.swift */,
+				B26415D82435FE94000A65F0 /* MTGNativeAdView.xib */,
+				B26415DC2435FEA4000A65F0 /* MTGNativeAdView.swift */,
 			);
 			path = MTG;
 			sourceTree = "<group>";
@@ -222,7 +541,13 @@
 		B2AF6731242C623B00454795 /* Appnext */ = {
 			isa = PBXGroup;
 			children = (
-				B2AF6732242C623B00454795 /* Appnext_naitve.swift */,
+				B26415602431A1A6000A65F0 /* AppnextAdDownloader.swift */,
+				B264155C2431A18C000A65F0 /* AppnextNativeAdManager.swift */,
+				B264155E2431A198000A65F0 /* XbAppnextAdManager.swift */,
+				B26415682431A264000A65F0 /* AppnextAdModel.swift */,
+				B26415642431A1DF000A65F0 /* XbAdAdapter_appnext.swift */,
+				B26415622431A1DF000A65F0 /* XbAdManager_appnext.swift */,
+				B26415632431A1DF000A65F0 /* XbSDKIntegrationManager_appnext.swift */,
 			);
 			path = Appnext;
 			sourceTree = "<group>";
@@ -230,7 +555,12 @@
 		B2AF6733242C623B00454795 /* Admob */ = {
 			isa = PBXGroup;
 			children = (
-				B2AF6734242C623B00454795 /* Admob_naitve.swift */,
+				B2AF6784242DF98700454795 /* XbGoogleAdManager.swift */,
+				B2AF6780242DF96800454795 /* GoogleAdDownloader.swift */,
+				B2AF6782242DF97B00454795 /* GoogleNativeAdManager.swift */,
+				B2AF678D242DFA3700454795 /* XbAdAdapter_admob.swift */,
+				B2AF678C242DFA3600454795 /* XbAdManager_admob.swift */,
+				B2AF678E242DFA3700454795 /* XbSDKIntegrationManager_admob.swift */,
 			);
 			path = Admob;
 			sourceTree = "<group>";
@@ -238,27 +568,21 @@
 		B2AF6735242C623B00454795 /* RewardVideo */ = {
 			isa = PBXGroup;
 			children = (
-				B2AF6736242C623B00454795 /* Baidu */,
+				B26415802431C61E000A65F0 /* Core */,
+				B26415952432F92A000A65F0 /* XB */,
 				B2AF6738242C623B00454795 /* FB */,
 				B2AF673A242C623B00454795 /* MTG */,
-				B2AF673C242C623B00454795 /* Appnext */,
 				B2AF673E242C623B00454795 /* Admob */,
 			);
 			path = RewardVideo;
 			sourceTree = "<group>";
 		};
-		B2AF6736242C623B00454795 /* Baidu */ = {
-			isa = PBXGroup;
-			children = (
-				B2AF6737242C623B00454795 /* Baidu_rewardvideo.swift */,
-			);
-			path = Baidu;
-			sourceTree = "<group>";
-		};
 		B2AF6738242C623B00454795 /* FB */ = {
 			isa = PBXGroup;
 			children = (
-				B2AF6739242C623B00454795 /* FB_rewardvideo.swift */,
+				B264157C2431C5B4000A65F0 /* FBRewardVideoDownLoader.swift */,
+				B264158D2431E408000A65F0 /* XbFbRVManager.swift */,
+				B26415B22435D210000A65F0 /* XBRewardVideoManager_FB.swift */,
 			);
 			path = FB;
 			sourceTree = "<group>";
@@ -266,23 +590,20 @@
 		B2AF673A242C623B00454795 /* MTG */ = {
 			isa = PBXGroup;
 			children = (
-				B2AF673B242C623B00454795 /* MTG_rewardvideo.swift */,
+				B264157E2431C5C0000A65F0 /* MTGRewardVideoDownLoader.swift */,
+				B26415872431CB72000A65F0 /* XbMTGRVManager.swift */,
+				B264158B2431CC5E000A65F0 /* XBWeakMTGDelegate.swift */,
+				B26415B42435D277000A65F0 /* XBRewardVideoManager_MTG.swift */,
 			);
 			path = MTG;
-			sourceTree = "<group>";
-		};
-		B2AF673C242C623B00454795 /* Appnext */ = {
-			isa = PBXGroup;
-			children = (
-				B2AF673D242C623B00454795 /* Appnext_rewardvideo.swift */,
-			);
-			path = Appnext;
 			sourceTree = "<group>";
 		};
 		B2AF673E242C623B00454795 /* Admob */ = {
 			isa = PBXGroup;
 			children = (
-				B2AF673F242C623B00454795 /* Admob_rewardvideo.swift */,
+				B264157A2431C5A9000A65F0 /* GoogleRewardVideoDownLoader.swift */,
+				B26415892431CB82000A65F0 /* XbGoogleRVManager.swift */,
+				B26415B62435D29D000A65F0 /* XBRewardVideoManager_admob.swift */,
 			);
 			path = Admob;
 			sourceTree = "<group>";
@@ -290,27 +611,21 @@
 		B2AF6740242C623B00454795 /* InterstitialAd */ = {
 			isa = PBXGroup;
 			children = (
-				B2AF6741242C623B00454795 /* Baidu */,
+				B26415A024349D2E000A65F0 /* Core */,
 				B2AF6743242C623B00454795 /* FB */,
 				B2AF6745242C623B00454795 /* MTG */,
-				B2AF6747242C623B00454795 /* Appnext */,
 				B2AF6749242C623B00454795 /* Admob */,
+				B26415A724349D75000A65F0 /* AppLovin */,
 			);
 			path = InterstitialAd;
-			sourceTree = "<group>";
-		};
-		B2AF6741242C623B00454795 /* Baidu */ = {
-			isa = PBXGroup;
-			children = (
-				B2AF6742242C623B00454795 /* Baidu_interstitialAd.swift */,
-			);
-			path = Baidu;
 			sourceTree = "<group>";
 		};
 		B2AF6743242C623B00454795 /* FB */ = {
 			isa = PBXGroup;
 			children = (
-				B2AF6744242C623B00454795 /* FB_interstitialAd.swift */,
+				B264159E24349D1B000A65F0 /* FBInterstitialAdDownLoader.swift */,
+				B26415AA2434A381000A65F0 /* XbFbInterstitialManager.swift */,
+				B26415B82435D34F000A65F0 /* XbInterstitialAdManager_FB.swift */,
 			);
 			path = FB;
 			sourceTree = "<group>";
@@ -318,23 +633,19 @@
 		B2AF6745242C623B00454795 /* MTG */ = {
 			isa = PBXGroup;
 			children = (
-				B2AF6746242C623B00454795 /* MTG_interstitialAd.swift */,
+				B26415A324349D4F000A65F0 /* MTGInterstitialAdDownLoader.swift */,
+				B26415AC2434A3A6000A65F0 /* XbMTGInterstitialManager.swift */,
+				B26415BA2435D357000A65F0 /* XbInterstitialAdManager_MTG.swift */,
 			);
 			path = MTG;
-			sourceTree = "<group>";
-		};
-		B2AF6747242C623B00454795 /* Appnext */ = {
-			isa = PBXGroup;
-			children = (
-				B2AF6748242C623B00454795 /* Appnext_interstitialAd.swift */,
-			);
-			path = Appnext;
 			sourceTree = "<group>";
 		};
 		B2AF6749242C623B00454795 /* Admob */ = {
 			isa = PBXGroup;
 			children = (
-				B2AF674A242C623B00454795 /* Admob_interstitialAd.swift */,
+				B26415A524349D63000A65F0 /* GoogleInterstitialAdDownLoader.swift */,
+				B26415AE2434A3B3000A65F0 /* XbGoogleInterstitialManager.swift */,
+				B26415BC2435D361000A65F0 /* XbInterstitialAdManager_admob.swift */,
 			);
 			path = Admob;
 			sourceTree = "<group>";
@@ -344,6 +655,7 @@
 			children = (
 				B2AF675D242C85FA00454795 /* XbSDKIntegration.swift */,
 				B2AF6761242C8A8800454795 /* SSPAdvertConfig.swift */,
+				B26415E42436D064000A65F0 /* UIColorExtension.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -362,6 +674,7 @@
 			isa = PBXGroup;
 			children = (
 				B2AF677E242D958600454795 /* DictionaryExtension.swift */,
+				B26415CA2435F8F7000A65F0 /* UIImageViewExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -378,6 +691,7 @@
 				B2AF6697242B377000454795 /* Frameworks */,
 				B2AF6698242B377000454795 /* Resources */,
 				73090AAB74946F018771A191 /* [CP] Embed Pods Frameworks */,
+				A368FA750A484E6FBC5CD0CF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -400,6 +714,7 @@
 				TargetAttributes = {
 					B2AF6699242B377000454795 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -426,9 +741,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B26415C42435F001000A65F0 /* DUNativeAdSView.xib in Resources */,
 				B2AF66AA242B377100454795 /* LaunchScreen.storyboard in Resources */,
+				B26415D42435FCDA000A65F0 /* MTGNativeAdSView.xib in Resources */,
+				B26415DA2435FE94000A65F0 /* MTGNativeAdView.xib in Resources */,
 				B2AF66A7242B377100454795 /* Assets.xcassets in Resources */,
 				B2AF66A5242B377000454795 /* Main.storyboard in Resources */,
+				B26415CE2435FAD2000A65F0 /* FacebookNativeAdSView.xib in Resources */,
+				B26415E1243601AF000A65F0 /* FacebookNativeAdView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +794,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XBADBaseDemo/Pods-XBADBaseDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A368FA750A484E6FBC5CD0CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XBADBaseDemo/Pods-XBADBaseDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XBADBaseDemo/Pods-XBADBaseDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XBADBaseDemo/Pods-XBADBaseDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -481,39 +818,85 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2AF6769242C95BC00454795 /* XbFbAdProtocol.swift in Sources */,
+				B26415A424349D4F000A65F0 /* MTGInterstitialAdDownLoader.swift in Sources */,
+				B2AF6769242C95BC00454795 /* XbFbAdManager.swift in Sources */,
 				B2AF66A2242B377000454795 /* ViewController.swift in Sources */,
-				B2AF674E242C623B00454795 /* MTG_naitve.swift in Sources */,
+				B26415842431C9AA000A65F0 /* XBRewardVideoContainerController.swift in Sources */,
 				B2AF675C242C677000454795 /* FBAdDownloader.swift in Sources */,
-				B2AF6753242C623B00454795 /* MTG_rewardvideo.swift in Sources */,
+				B264151424319974000A65F0 /* XbSDKIntegrationManager_MTG.swift in Sources */,
+				B26415BF2435D371000A65F0 /* XbInterstitialAdManager_AL.swift in Sources */,
+				B26415B72435D29D000A65F0 /* XBRewardVideoManager_admob.swift in Sources */,
+				B26415BB2435D357000A65F0 /* XbInterstitialAdManager_MTG.swift in Sources */,
+				B264158A2431CB82000A65F0 /* XbGoogleRVManager.swift in Sources */,
+				B26415C72435F56A000A65F0 /* DUNativeAdSView.swift in Sources */,
+				B264150C2431993C000A65F0 /* MTG_NativeAdManager.swift in Sources */,
+				B2AF6781242DF96800454795 /* GoogleAdDownloader.swift in Sources */,
+				B264157D2431C5B4000A65F0 /* FBRewardVideoDownLoader.swift in Sources */,
+				B26415792431A6EB000A65F0 /* XbAdAdapter_baidu.swift in Sources */,
+				B26415B92435D34F000A65F0 /* XbInterstitialAdManager_FB.swift in Sources */,
+				B26415882431CB72000A65F0 /* XbMTGRVManager.swift in Sources */,
+				B26415A924349DB1000A65F0 /* ALInterstitialAdDownLoader.swift in Sources */,
+				B26415672431A1DF000A65F0 /* XbAdAdapter_appnext.swift in Sources */,
+				B26415DD2435FEA4000A65F0 /* MTGNativeAdView.swift in Sources */,
+				B26415AB2434A381000A65F0 /* XbFbInterstitialManager.swift in Sources */,
+				B26415B32435D210000A65F0 /* XBRewardVideoManager_FB.swift in Sources */,
+				B264159F24349D1B000A65F0 /* FBInterstitialAdDownLoader.swift in Sources */,
 				B2AF6778242CC31200454795 /* Constants.swift in Sources */,
 				B2AF677A242CC3A800454795 /* XbAdManager_FB.swift in Sources */,
-				B2AF6754242C623B00454795 /* Appnext_rewardvideo.swift in Sources */,
+				B264150A24319924000A65F0 /* MTGAdDownloader.swift in Sources */,
 				B2AF6760242C89F800454795 /* FBNativeAdManager.swift in Sources */,
+				B264156F2431A69E000A65F0 /* DUAdDownloader.swift in Sources */,
+				B2AF6791242DFA3700454795 /* XbSDKIntegrationManager_admob.swift in Sources */,
+				B264151224319974000A65F0 /* XbAdManager_MTG.swift in Sources */,
 				B2AF669E242B377000454795 /* AppDelegate.swift in Sources */,
+				B264151324319974000A65F0 /* XbAdAdapter_MTG.swift in Sources */,
 				B2AF676B242C99EA00454795 /* XbSDKIntegrationManager.swift in Sources */,
-				B2AF6755242C623B00454795 /* Admob_rewardvideo.swift in Sources */,
-				B2AF6756242C623B00454795 /* Baidu_interstitialAd.swift in Sources */,
+				B26415A624349D63000A65F0 /* GoogleInterstitialAdDownLoader.swift in Sources */,
+				B264155F2431A198000A65F0 /* XbAppnextAdManager.swift in Sources */,
+				B2AF6783242DF97B00454795 /* GoogleNativeAdManager.swift in Sources */,
 				B2AF6765242C8B8100454795 /* AdvertConfig.swift in Sources */,
+				B26415652431A1DF000A65F0 /* XbAdManager_appnext.swift in Sources */,
+				B2AF678F242DFA3700454795 /* XbAdManager_admob.swift in Sources */,
+				B26415AD2434A3A6000A65F0 /* XbMTGInterstitialManager.swift in Sources */,
+				B26415E52436D064000A65F0 /* UIColorExtension.swift in Sources */,
 				B2AF676D242C9A1F00454795 /* XbSDKIntegrationManager_FB.swift in Sources */,
-				B2AF6752242C623B00454795 /* FB_rewardvideo.swift in Sources */,
+				B26415782431A6EB000A65F0 /* XbSDKIntegrationManager_baidu.swift in Sources */,
+				B26415A224349D3A000A65F0 /* XbInterstitialAdManager.swift in Sources */,
+				B26415732431A6B7000A65F0 /* XbDUAdManager.swift in Sources */,
+				B26415612431A1A6000A65F0 /* AppnextAdDownloader.swift in Sources */,
+				B26415822431C627000A65F0 /* XBRewardVideoManager.swift in Sources */,
+				B26415772431A6EB000A65F0 /* XbAdManager_baidu.swift in Sources */,
 				B2AF6767242C903600454795 /* SSPLogProtocol.swift in Sources */,
-				B2AF6757242C623B00454795 /* FB_interstitialAd.swift in Sources */,
-				B2AF675A242C623B00454795 /* Admob_interstitialAd.swift in Sources */,
 				B2AF6776242C9F7200454795 /* AdEnum.swift in Sources */,
-				B2AF674F242C623B00454795 /* Appnext_naitve.swift in Sources */,
-				B2AF6758242C623B00454795 /* MTG_interstitialAd.swift in Sources */,
+				B26415E3243601BC000A65F0 /* FacebookNativeAdView.swift in Sources */,
+				B26415C92435F60C000A65F0 /* FontLabel.swift in Sources */,
+				B26415CB2435F8F7000A65F0 /* UIImageViewExtension.swift in Sources */,
+				B2AF6785242DF98700454795 /* XbGoogleAdManager.swift in Sources */,
+				B264155D2431A18C000A65F0 /* AppnextNativeAdManager.swift in Sources */,
+				B26415BD2435D361000A65F0 /* XbInterstitialAdManager_admob.swift in Sources */,
+				B26415712431A6AF000A65F0 /* DUNativeAdManager.swift in Sources */,
+				B264157B2431C5A9000A65F0 /* GoogleRewardVideoDownLoader.swift in Sources */,
+				B264158C2431CC5E000A65F0 /* XBWeakMTGDelegate.swift in Sources */,
 				B2AF676F242C9B9A00454795 /* XbAdManager.swift in Sources */,
-				B2AF677C242CC5B000454795 /* Timer.swift in Sources */,
+				B2AF6790242DFA3700454795 /* XbAdAdapter_admob.swift in Sources */,
+				B2AF677C242CC5B000454795 /* DelayTimer.swift in Sources */,
+				B264150E24319947000A65F0 /* XbMTGAdManager.swift in Sources */,
+				B264151624319B63000A65F0 /* MTGAdModel.swift in Sources */,
 				B2AF6772242C9F0E00454795 /* XbAdAdapter.swift in Sources */,
+				B26415662431A1DF000A65F0 /* XbSDKIntegrationManager_appnext.swift in Sources */,
+				B26415B52435D277000A65F0 /* XBRewardVideoManager_MTG.swift in Sources */,
+				B26415B12434A3BE000A65F0 /* XbALInterstitialManager.swift in Sources */,
 				B2AF6774242C9F2200454795 /* XbAdAdapter_FB.swift in Sources */,
-				B2AF6751242C623B00454795 /* Baidu_rewardvideo.swift in Sources */,
 				B2AF677F242D958600454795 /* DictionaryExtension.swift in Sources */,
+				B264156B2431A3EF000A65F0 /* Utils.swift in Sources */,
 				B2AF6762242C8A8800454795 /* SSPAdvertConfig.swift in Sources */,
-				B2AF6759242C623B00454795 /* Appnext_interstitialAd.swift in Sources */,
+				B26415D12435FAE3000A65F0 /* FacebookNativeAdSView.swift in Sources */,
+				B264157F2431C5C0000A65F0 /* MTGRewardVideoDownLoader.swift in Sources */,
+				B264158E2431E408000A65F0 /* XbFbRVManager.swift in Sources */,
+				B26415D72435FCE7000A65F0 /* MTGNativeAdSView.swift in Sources */,
 				B2AF675E242C85FA00454795 /* XbSDKIntegration.swift in Sources */,
-				B2AF6750242C623B00454795 /* Admob_naitve.swift in Sources */,
-				B2AF674C242C623B00454795 /* Baidu_naitve.swift in Sources */,
+				B26415AF2434A3B3000A65F0 /* XbGoogleInterstitialManager.swift in Sources */,
+				B26415692431A264000A65F0 /* AppnextAdModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,16 +1041,47 @@
 			baseConfigurationReference = 691ECDEB49F818073501F86B /* Pods-XBADBaseDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2M9642S969;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKCoreKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ObjectMapper\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb\"",
+					"\"${PODS_ROOT}/FBAudienceNetwork/Static\"",
+					"\"${PODS_ROOT}/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current\"",
+					"\"${PODS_ROOT}/GoogleAppMeasurement/Frameworks\"",
+					"\"${PODS_ROOT}/MintegralAdSDK/MintegralAdSDK/NativeAd\"",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities/GoogleUtilities.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ObjectMapper/ObjectMapper.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON/SwiftyJSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb/nanopb.framework/Headers\"",
+					"$(PROJECT_DIR)/XBADBaseDemo/Appnext/include",
+				);
 				INFOPLIST_FILE = XBADBaseDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XBADBaseDemo/Appnext",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xxb.XBADBaseDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "../XBADBase/XBADBaseDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -678,16 +1092,46 @@
 			baseConfigurationReference = 37525BB60AC453FABA6F5D4A /* Pods-XBADBaseDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2M9642S969;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKCoreKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ObjectMapper\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb\"",
+					"\"${PODS_ROOT}/FBAudienceNetwork/Static\"",
+					"\"${PODS_ROOT}/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current\"",
+					"\"${PODS_ROOT}/GoogleAppMeasurement/Frameworks\"",
+					"\"${PODS_ROOT}/MintegralAdSDK/MintegralAdSDK/NativeAd\"",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities/GoogleUtilities.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ObjectMapper/ObjectMapper.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON/SwiftyJSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb/nanopb.framework/Headers\"",
+					"$(PROJECT_DIR)/XBADBaseDemo/Appnext/include",
+				);
 				INFOPLIST_FILE = XBADBaseDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XBADBaseDemo/Appnext",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xxb.XBADBaseDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "../XBADBase/XBADBaseDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

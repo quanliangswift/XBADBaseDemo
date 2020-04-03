@@ -1,32 +1,116 @@
 PODS:
   - Alamofire (4.9.1)
+  - AppLovinSDK (6.11.1)
   - FBAudienceNetwork (5.7.1):
     - FBSDKCoreKit/Basics (>= 5.6.0)
   - FBSDKCoreKit/Basics (6.0.0)
+  - FLAnimatedImage (1.0.12)
+  - Google-Mobile-Ads-SDK (7.48.0):
+    - GoogleAppMeasurement (~> 6.0)
+  - GoogleAppMeasurement (6.2.2):
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (= 0.3.9011)
+  - GoogleUtilities/AppDelegateSwizzler (6.5.1):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (6.5.1)
+  - GoogleUtilities/Logger (6.5.1):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (6.5.1):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (6.5.1):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (6.5.1)"
+  - GoogleUtilities/Reachability (6.5.1):
+    - GoogleUtilities/Logger
+  - libwebp (1.1.0):
+    - libwebp/demux (= 1.1.0)
+    - libwebp/mux (= 1.1.0)
+    - libwebp/webp (= 1.1.0)
+  - libwebp/demux (1.1.0):
+    - libwebp/webp
+  - libwebp/mux (1.1.0):
+    - libwebp/demux
+  - libwebp/webp (1.1.0)
+  - MintegralAdSDK/InterstitialVideoAd (5.8.8.0):
+    - MintegralAdSDK/NativeAd
+  - MintegralAdSDK/NativeAd (5.8.8.0)
+  - MintegralAdSDK/RewardVideoAd (5.8.8.0):
+    - MintegralAdSDK/NativeAd
+  - nanopb (0.3.9011):
+    - nanopb/decode (= 0.3.9011)
+    - nanopb/encode (= 0.3.9011)
+  - nanopb/decode (0.3.9011)
+  - nanopb/encode (0.3.9011)
   - ObjectMapper (3.5.1)
+  - SDWebImage (4.4.8):
+    - SDWebImage/Core (= 4.4.8)
+  - SDWebImage/Core (4.4.8)
+  - SDWebImage/GIF (4.4.8):
+    - FLAnimatedImage (~> 1.0)
+    - SDWebImage/Core
+  - SDWebImage/WebP (4.4.8):
+    - libwebp (< 2.0, >= 0.5)
+    - SDWebImage/Core
+  - SnapKit (5.0.1)
   - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.9.1)
+  - AppLovinSDK (= 6.11.1)
   - FBAudienceNetwork (~> 5.7.0)
+  - Google-Mobile-Ads-SDK (= 7.48.0)
+  - MintegralAdSDK/InterstitialVideoAd (= 5.8.8.0)
+  - MintegralAdSDK/NativeAd (= 5.8.8.0)
+  - MintegralAdSDK/RewardVideoAd (= 5.8.8.0)
   - ObjectMapper
+  - SDWebImage
+  - SDWebImage/GIF
+  - SDWebImage/WebP
+  - SnapKit
   - SwiftyJSON
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - AppLovinSDK
     - FBAudienceNetwork
     - FBSDKCoreKit
+    - FLAnimatedImage
+    - Google-Mobile-Ads-SDK
+    - GoogleAppMeasurement
+    - GoogleUtilities
+    - libwebp
+    - MintegralAdSDK
+    - nanopb
     - ObjectMapper
+    - SDWebImage
+    - SnapKit
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AppLovinSDK: 604c3120850d65f1a5c708d51a86326a52f083f5
   FBAudienceNetwork: 33fc8c8c07c1cdbf5279784b73729c6410809daa
   FBSDKCoreKit: fe738b172590e622c86735b45e20d196848b54df
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  Google-Mobile-Ads-SDK: 709fa768c3ba8e8b260d8cb085c607097fd3f79d
+  GoogleAppMeasurement: d0560d915abf15e692e8538ba1d58442217b6aff
+  GoogleUtilities: 06eb53bb579efe7099152735900dd04bf09e7275
+  libwebp: 946cb3063cea9236285f7e9a8505d806d30e07f3
+  MintegralAdSDK: 48a4d3a17cb3fedf21a2d381944078688a427e88
+  nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 8fb5fc5482022d3202131c5b54ae85514f4b4251
+PODFILE CHECKSUM: 54015ff097c717eac98513f9a03d02e8bf0d0e37
 
 COCOAPODS: 1.8.4

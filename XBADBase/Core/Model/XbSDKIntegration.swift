@@ -150,6 +150,25 @@ class FrequencyControl: NSObject, Mappable {
         mintegral <- map["mintegral"]
         applovin <- map["applovin"]
     }
+    func getControl(by source: String?) -> [FrequencyControlItem]? {
+        var frequencyItems: [FrequencyControlItem]?
+        switch source {
+        case "facebook":
+            frequencyItems = facebook
+            break
+        case "admob":
+            frequencyItems = admob
+        case "baidu":
+            frequencyItems = baidu
+        case "appnext":
+            frequencyItems = appnext
+        case "mintegral":
+            frequencyItems = mintegral
+        default:
+        break
+        }
+        return frequencyItems
+    }
 }
 
 class FrequencyControlItem: NSObject, Mappable {
@@ -204,6 +223,40 @@ class XbAdError: NSObject, Mappable {
 //        appnextError <- map["appnextError"]
 //        mtgError <- map["mtgError"]
 //        alError <- map["alError"]
+    }
+    
+    func getError(by source: String, placement: String) -> [Int: XbAdErrorItem]? {
+        return adError[source]?[placement]
+    }
+    func setError(by source: String, placement: String, errorCode: Int) {
+        if adError[source] == nil {
+            adError[source] = [String: [Int: XbAdErrorItem]]()
+        }
+        //                    广告请求的报错记录
+        if let errorItems = adError[source]![placement] {
+           if let error = errorItems[errorCode] {
+                let tempError = error
+                tempError.count += 1
+                tempError.time = Date().timeIntervalSince1970
+                adError[source]![placement]?[errorCode] = tempError
+           } else {
+               let tempError = XbAdErrorItem()
+                tempError.count = 1
+                tempError.time = Date().timeIntervalSince1970
+                adError[source]![placement]?[errorCode] = tempError
+           }
+
+       } else {
+           var errorDic: [Int: XbAdErrorItem] = [:]
+           let tempError = XbAdErrorItem()
+           tempError.count = 1
+           tempError.time = Date().timeIntervalSince1970
+           errorDic[errorCode] = tempError
+           adError[source]![placement] = errorDic
+       }
+    }
+    func clearError(by source: String, placement: String) {
+        adError[source]?[placement] = nil
     }
 }
 
