@@ -10,6 +10,30 @@ import UIKit
 //import FBAudienceNetwork
 //import GoogleMobileAds
 //import DUModuleSDK
+protocol checkErrorProtocol: class {
+    func checkErrorCode(frequencyItems: [FrequencyControlItem], errorDic: [Int: XbAdErrorItem]) -> (Bool, Int)
+}
+extension checkErrorProtocol {
+    // 检查error code是否达到最大限度
+    func checkErrorCode(frequencyItems: [FrequencyControlItem], errorDic: [Int: XbAdErrorItem]) -> (Bool, Int) {
+        var tempErrorDic = errorDic
+        // 是否可以继续请求广告
+        var isContinue: Bool = true
+        var triggerCode: Int = 0
+        for item in frequencyItems {
+            if let error = tempErrorDic[item.code ?? 0] {
+                if Date().timeIntervalSince1970 - error.time > item.wait {
+                    tempErrorDic[item.code ?? 0] = nil
+                } else {
+                    isContinue = false
+                    triggerCode = item.code ?? 0
+                    break
+                }
+            }
+        }
+        return (isContinue, triggerCode)
+    }
+}
 
 typealias cacheResult = (errorCode: Int, msg: String, duration: Double)
 

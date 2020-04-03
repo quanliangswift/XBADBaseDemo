@@ -38,7 +38,7 @@ Pod::Spec.new do |spec|
   spec.dependency "SwiftyJSON"
   spec.dependency "ObjectMapper"
   spec.dependency "Alamofire"
-  
+
 # swift项目中有OC的第三方，在验证的时候加上--use-modular-headers
   spec.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
   
@@ -52,6 +52,7 @@ Pod::Spec.new do |spec|
     ss.subspec 'Core' do |coress|
       coress.source_files = 'XBADBase/Native/Core/*.swift'
       coress.dependency 'XBADBaseDemo/Core'
+      coress.dependency 'SnapKit'
     end
     ss.subspec 'FB' do |fbss|
       fbss.source_files = 'XBADBase/Native/FB/*.swift'
@@ -71,7 +72,6 @@ Pod::Spec.new do |spec|
     # ss.subspec 'Baidu' do |baiduss|
     #   baiduss.source_files = 'XBADBase/Native/Baidu/*.swift'
     #   baiduss.dependency 'XBADBaseDemo/Native/Core'
-    #   baiduss.dependency 'SnapKit'
       # baidu 不支持pod，需要自己导入.framework文件，
     # end
     ss.subspec 'MTG' do |mtgss|
