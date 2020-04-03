@@ -40,12 +40,13 @@ Pod::Spec.new do |spec|
   spec.dependency "Alamofire"
 
   spec.subspec 'Core' do |ss|
+  ss.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
   ss.source_files = 'XBADBase/Core/**/*.swift'
   ss.dependency 'SDWebImage'
   end
 
   spec.subspec 'Native' do |ss|
-    ss.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
+    
     ss.subspec 'Core' do |coress|
       coress.source_files = 'XBADBase/Native/Core/*.swift'
       coress.dependency 'XBADBaseDemo/Core'
