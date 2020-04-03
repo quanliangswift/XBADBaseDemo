@@ -4,9 +4,9 @@
 
 #import <MTGSDK/MTGSDK.h>
 #import <MTGSDK/MTGAdChoicesView.h>
-#import <MTGSDKReward/MTGRewardAdManager.h>
-#import <MTGSDKInterstitialVideo/MTGInterstitialVideoAdManager.h>
-
-
-#import <AppnextNativeAdsSDK/AppnextNativeAdsSDK.h>
-#import <AppnextSDKCore/AppnextSDKCore.h>
+//#import <MTGSDKReward/MTGRewardAdManager.h>
+//#import <MTGSDKInterstitialVideo/MTGInterstitialVideoAdManager.h>
+//
+//
+//#import <AppnextNativeAdsSDK/AppnextNativeAdsSDK.h>
+//#import <AppnextSDKCore/AppnextSDKCore.h>
