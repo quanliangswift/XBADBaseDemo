@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "XBADBaseDemo"
-  spec.version      = "0.0.1.12"
+  spec.version      = "0.0.1.13"
   spec.summary      = "XBADBaseDemo for test"
 
   spec.description  = <<-DESC
@@ -56,11 +56,11 @@ Pod::Spec.new do |spec|
       coress.dependency 'XBADBaseDemo/Core'
       coress.dependency 'SnapKit'
     end
-    # ss.subspec 'FB' do |fbss|
-    #   fbss.source_files = 'XBADBase/Native/FB/*.swift'
-    #   fbss.dependency 'FBAudienceNetwork'
-    #   fbss.dependency 'XBADBaseDemo/Native/Core'
-    # end
+    ss.subspec 'FB' do |fbss|
+      fbss.source_files = 'XBADBase/Native/FB/*.swift'
+      fbss.dependency 'FBAudienceNetwork'
+      fbss.dependency 'XBADBaseDemo/Native/Core'
+    end
     # ss.subspec 'Admob' do |admobss|
     #   admobss.source_files = 'XBADBase/Native/Admob/*.swift'
     #   admobss.dependency  'Google-Mobile-Ads-SDK', '7.48.0'
@@ -77,11 +77,12 @@ Pod::Spec.new do |spec|
       # baidu 不支持pod，需要自己导入.framework文件，
     # end
     ss.subspec 'MTG' do |mtgss|
-      mtgss.source_files = 'XBADBase/Native/MTG/*.swift'
+      mtgss.source_files = 'XBADBase/Native/MTG/*'
       mtgss.dependency 'MintegralAdSDK/NativeAd', '5.8.8.0'
       mtgss.dependency 'XBADBaseDemo/Native/Core'
       # mtgss.preserve_path = "${POD_ROOT}/XBADBaseDemo/Native/MTG/BridgingHeader.h"
       # mtgss.pod_target_xcconfig = {'SWIFT_OBJC_BRIDGING_HEADER' => '${POD_ROOT}/XBADBaseDemo/Native/MTG/BridgingHeader.h'}
+      # 因为用到了桥接文件，所以要设置桥接文件的路径
       mtgss.public_header_files = 'XBADBase/Native/MTG/BridgingHeader.h'
     end
   end
