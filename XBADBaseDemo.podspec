@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "XBADBaseDemo"
-  spec.version      = "0.0.1.10"
+  spec.version      = "0.0.1.11"
   spec.summary      = "XBADBaseDemo for test"
 
   spec.description  = <<-DESC
@@ -46,7 +46,7 @@ Pod::Spec.new do |spec|
   ss.source_files = 'XBADBase/Core/**/*.swift'
   # ss.source_files = 'XBADBase/Core/**/*.h'
   ss.dependency 'SDWebImage'
-  ss.dependency 'SnapKit'
+  
   end
 
   spec.subspec 'Native' do |ss|
@@ -54,6 +54,7 @@ Pod::Spec.new do |spec|
     ss.subspec 'Core' do |coress|
       coress.source_files = 'XBADBase/Native/Core/*.swift'
       coress.dependency 'XBADBaseDemo/Core'
+      coress.dependency 'SnapKit'
     end
     ss.subspec 'FB' do |fbss|
       fbss.source_files = 'XBADBase/Native/FB/*.swift'
