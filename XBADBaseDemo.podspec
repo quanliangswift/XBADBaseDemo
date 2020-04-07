@@ -81,7 +81,8 @@ Pod::Spec.new do |spec|
       mtgss.dependency 'MintegralAdSDK/NativeAd', '5.8.8.0'
       mtgss.dependency 'XBADBaseDemo/Native/Core'
       # mtgss.preserve_path = "${POD_ROOT}/XBADBaseDemo/Native/MTG/BridgingHeader.h"
-      mtgss.pod_target_xcconfig = {'SWIFT_OBJC_BRIDGING_HEADER' => '${POD_ROOT}/XBADBaseDemo/Native/MTG/BridgingHeader.h'}
+      # mtgss.pod_target_xcconfig = {'SWIFT_OBJC_BRIDGING_HEADER' => '${POD_ROOT}/XBADBaseDemo/Native/MTG/BridgingHeader.h'}
+      mtgss.public_header_files = 'XBADBase/Native/MTG/BridgingHeader.h'
     end
   end
 
