@@ -76,11 +76,11 @@ Pod::Spec.new do |spec|
     #   baiduss.dependency 'XBADBaseDemo/Native/Core'
       # baidu 不支持pod，需要自己导入.framework文件，
     # end
-    # ss.subspec 'MTG' do |mtgss|
-    #   mtgss.source_files = 'XBADBase/Native/MTG/*.swift'
-    #   mtgss.dependency 'MintegralAdSDK/NativeAd', '5.8.8.0'
-    #   mtgss.dependency 'XBADBaseDemo/Native/Core'
-    # end
+    ss.subspec 'MTG' do |mtgss|
+      mtgss.source_files = 'XBADBase/Native/MTG/*.swift'
+      mtgss.dependency 'MintegralAdSDK/NativeAd', '5.8.8.0'
+      mtgss.dependency 'XBADBaseDemo/Native/Core'
+    end
   end
 
   # spec.subspec 'RewardVideo' do |ss|
