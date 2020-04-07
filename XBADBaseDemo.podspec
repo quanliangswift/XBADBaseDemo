@@ -40,12 +40,13 @@ Pod::Spec.new do |spec|
   spec.dependency "Alamofire"
 
 # swift项目中有OC的第三方，在验证的时候加上--use-modular-headers
-  spec.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
+  spec.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'OTHER_LDFLAGS' => '-lObjC' }
   
   spec.subspec 'Core' do |ss|
   ss.source_files = 'XBADBase/Core/**/*.swift'
   # ss.source_files = 'XBADBase/Core/**/*.h'
   ss.dependency 'SDWebImage'
+  ss.dependency 'SnapKit'
   end
 
   spec.subspec 'Native' do |ss|
@@ -53,7 +54,6 @@ Pod::Spec.new do |spec|
     ss.subspec 'Core' do |coress|
       coress.source_files = 'XBADBase/Native/Core/*.swift'
       coress.dependency 'XBADBaseDemo/Core'
-      coress.dependency 'SnapKit'
     end
     ss.subspec 'FB' do |fbss|
       fbss.source_files = 'XBADBase/Native/FB/*.swift'
