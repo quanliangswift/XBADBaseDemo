@@ -104,6 +104,7 @@
 		37525BB60AC453FABA6F5D4A /* Pods-XBADBaseDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XBADBaseDemo.release.xcconfig"; path = "Target Support Files/Pods-XBADBaseDemo/Pods-XBADBaseDemo.release.xcconfig"; sourceTree = "<group>"; };
 		691ECDEB49F818073501F86B /* Pods-XBADBaseDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XBADBaseDemo.debug.xcconfig"; path = "Target Support Files/Pods-XBADBaseDemo/Pods-XBADBaseDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		AF0D17716B42445C9621331F /* Pods_XBADBaseDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XBADBaseDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2338644243C291E0037DA60 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		B264150924319924000A65F0 /* MTGAdDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTGAdDownloader.swift; sourceTree = "<group>"; };
 		B264150B2431993C000A65F0 /* MTG_NativeAdManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTG_NativeAdManager.swift; sourceTree = "<group>"; };
 		B264150D24319947000A65F0 /* XbMTGAdManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XbMTGAdManager.swift; sourceTree = "<group>"; };
@@ -534,6 +535,7 @@
 				B26415D62435FCE7000A65F0 /* MTGNativeAdSView.swift */,
 				B26415D82435FE94000A65F0 /* MTGNativeAdView.xib */,
 				B26415DC2435FEA4000A65F0 /* MTGNativeAdView.swift */,
+				B2338644243C291E0037DA60 /* BridgingHeader.h */,
 			);
 			path = MTG;
 			sourceTree = "<group>";

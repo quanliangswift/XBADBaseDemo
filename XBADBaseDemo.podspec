@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "XBADBaseDemo"
-  spec.version      = "0.0.1.11"
+  spec.version      = "0.0.1.12"
   spec.summary      = "XBADBaseDemo for test"
 
   spec.description  = <<-DESC
@@ -80,6 +80,8 @@ Pod::Spec.new do |spec|
       mtgss.source_files = 'XBADBase/Native/MTG/*.swift'
       mtgss.dependency 'MintegralAdSDK/NativeAd', '5.8.8.0'
       mtgss.dependency 'XBADBaseDemo/Native/Core'
+      # mtgss.preserve_path = "XBADBase/Native/MTG/BridgingHeader.h"
+      mtgss.xcconfig = {'SWIFT_OBJC_BRIDGING_HEADER' => 'XBADBase/Native/MTG/BridgingHeader.h'}
     end
   end
 
