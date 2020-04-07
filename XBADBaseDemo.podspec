@@ -44,7 +44,7 @@ Pod::Spec.new do |spec|
   
   spec.subspec 'Core' do |ss|
   ss.source_files = 'XBADBase/Core/**/*.swift'
-  ss.source_files = 'XBADBase/Core/**/*.h'
+  # ss.source_files = 'XBADBase/Core/**/*.h'
   ss.dependency 'SDWebImage'
   end
 
