@@ -8,6 +8,7 @@
 
 import UIKit
 import FBAudienceNetwork
+import SnapKit
 class FacebookNativeAdView: XBNativeAdBaseView {
     @IBOutlet weak var adIconImageView: UIImageView!
     @IBOutlet weak var adCoverMediaView: FBMediaView!
